@@ -1,15 +1,14 @@
 <?php
 
-namespace ShSo\Lacassa;
+namespace Hey\Lacassa;
 
 use Cassandra;
-use ShSo\Lacassa\Query\Builder as QueryBuilder;
-use ShSo\Lacassa\Query\Grammar as QueryGrammar;
-use ShSo\Lacassa\Schema\Builder as SchemaBuilder;
-use ShSo\Lacassa\Schema\Grammar as SchemaGrammar;
-use ShSo\Lacassa\Query\Processor as QueryProcessor;
+use Hey\Lacassa\Query\Builder as QueryBuilder;
+use Hey\Lacassa\Query\Grammar as QueryGrammar;
+use Hey\Lacassa\Schema\Builder as SchemaBuilder;
+use Hey\Lacassa\Schema\Grammar as SchemaGrammar;
+use Hey\Lacassa\Query\Processor as QueryProcessor;
 use Illuminate\Database\Connection as BaseConnection;
-use Cassandra\Exception\RuntimeException as CassandraRuntimeException;
 
 class Connection extends BaseConnection
 {
@@ -28,7 +27,7 @@ class Connection extends BaseConnection
     public function __construct(array $config)
     {
         $this->config = $config;
-        $this->db = $config['keyspace'];
+        $this->database = $config['keyspace'];
         $this->connection = $this->createConnection($config);
 
         $this->useDefaultPostProcessor();
@@ -41,7 +40,7 @@ class Connection extends BaseConnection
      *
      * @param string $table
      *
-     * @return \ShSo\Lacassa\Query\Builder
+     * @return \Hey\Lacassa\Query\Builder
      */
     public function table($table)
     {
@@ -49,7 +48,7 @@ class Connection extends BaseConnection
     }
 
     /**
-     * @return \ShSo\Lacassa\Schema\Builder
+     * @return \Hey\Lacassa\Schema\Builder
      */
     public function getSchemaBuilder()
     {
@@ -59,7 +58,7 @@ class Connection extends BaseConnection
     /**
      * Returns the connection grammer.
      *
-     * @return \ShSo\Lacassa\Schema\Grammar
+     * @return \Hey\Lacassa\Schema\Grammar
      */
     public function getSchemaGrammar()
     {
@@ -77,6 +76,19 @@ class Connection extends BaseConnection
     }
 
     /**
+     * Run a select statement against the database.
+     *
+     * @param  string  $query
+     * @param  array  $bindings
+     * @param  bool  $useReadPdo
+     * @return array
+     */
+    public function select($query, $bindings = [], $useReadPdo = true)
+    {
+        return $this->statement($query, $bindings);
+    }
+
+    /**
      * Create a new Cassandra connection.
      *
      * @param array $config
@@ -88,7 +100,7 @@ class Connection extends BaseConnection
         $builder = Cassandra::cluster()
             ->withContactPoints($config['host'] ?? '127.0.0.1')
             ->withPort(intval($config['port'] ?? '7000'));
-        if (array_key_exists('page_size', $config) && ! empty($config['page_size'])) {
+        if (array_key_exists('page_size', $config) && !empty($config['page_size'])) {
             $builder->withDefaultPageSize(intval($config['page_size'] ?? '5000'));
         }
         if (array_key_exists('consistency', $config) && in_array(strtoupper($config['consistency']), [
@@ -98,13 +110,13 @@ class Connection extends BaseConnection
             $consistency = constant('\Cassandra::CONSISTENCY_'.strtoupper($config['consistency']));
             $builder->withDefaultConsistency($consistency);
         }
-        if (array_key_exists('timeout', $config) && ! empty($config['timeout'])) {
+        if (array_key_exists('timeout', $config) && !empty($config['timeout'])) {
             $builder->withDefaultTimeout(intval($config['timeout']));
         }
-        if (array_key_exists('connect_timeout', $config) && ! empty($config['connect_timeout'])) {
+        if (array_key_exists('connect_timeout', $config) && !empty($config['connect_timeout'])) {
             $builder->withConnectTimeout(floatval($config['connect_timeout']));
         }
-        if (array_key_exists('request_timeout', $config) && ! empty($config['request_timeout'])) {
+        if (array_key_exists('request_timeout', $config) && !empty($config['request_timeout'])) {
             $builder->withRequestTimeout(floatval($config['request_timeout']));
         }
         if (array_key_exists('username', $config) && array_key_exists('password', $config)) {
@@ -132,7 +144,7 @@ class Connection extends BaseConnection
     }
 
     /**
-     * @return \ShSo\Lacassa\Query\Processor
+     * @return \Hey\Lacassa\Query\Processor
      */
     protected function getDefaultPostProcessor()
     {
@@ -140,7 +152,7 @@ class Connection extends BaseConnection
     }
 
     /**
-     * @return \ShSo\Lacassa\Query\Builder
+     * @return \Hey\Lacassa\Query\Builder
      */
     protected function getDefaultQueryBuilder()
     {
@@ -148,7 +160,7 @@ class Connection extends BaseConnection
     }
 
     /**
-     * @return \ShSo\Lacassa\Query\Grammar
+     * @return \Hey\Lacassa\Query\Grammar
      */
     protected function getDefaultQueryGrammar()
     {
@@ -156,51 +168,27 @@ class Connection extends BaseConnection
     }
 
     /**
-     * @return \ShSo\Lacassa\Schema\Grammar
+     * @return \Hey\Lacassa\Schema\Grammar
      */
     protected function getDefaultSchemaGrammar()
     {
         return new SchemaGrammar();
     }
 
-    /**
-     * Since it's not possible to find out the number
-     * of affected rows through datastax driver,
-     * it will check exceptions.
-     *
-     * @param $query string|\Cassandra\Statement
-     * @param $bindings array
-     *
-     * @return int 1 on success and 0 on failure
-     */
     public function affectingStatement($query, $bindings = [])
     {
-        try {
-            $this->statement($query, $bindings);
-
-            return 1;
-        } catch (CassandraRuntimeException $e) {
-            return 0;
-        }
+        return $this->statement($query, $bindings);
     }
 
-    /**
-     * @param $query string|\Cassandra\Statement
-     * @param $bindings array
-     *
-     * @return \Cassandra\Rows
-     * @throws \Cassandra\Exception\RuntimeException
-     */
     public function statement($query, $bindings = [])
     {
-        return $this->run($query, $bindings, function ($query, $bindings) {
-            if ($this->pretending()) {
-                return true;
+        return $this->run($query, $bindings, function ($me, $query, $bindings) {
+            if ($me->pretending()) {
+                return [];
             }
 
             $statement = $this->connection->prepare($query);
-            $this->recordsHaveBeenModified();
-
+            
             return $this->connection->execute($statement, ['arguments' => $bindings]);
         });
     }
@@ -212,7 +200,7 @@ class Connection extends BaseConnection
      */
     protected function reconnectIfMissingConnection()
     {
-        if (! isset($this->connection) || is_null($this->connection)) {
+        if (is_null($this->connection)) {
             $this->connection = $this->createConnection($this->config);
         }
     }

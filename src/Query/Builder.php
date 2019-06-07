@@ -1,10 +1,11 @@
 <?php
 
-namespace ShSo\Lacassa\Query;
+namespace Hey\Lacassa\Query;
 
 use Cassandra;
 use Illuminate\Support\Arr;
-use ShSo\Lacassa\Connection;
+use Hey\Lacassa\Connection;
+use Hey\Lacassa\Collection;
 use InvalidArgumentException;
 use Illuminate\Database\Query\Builder as BaseBuilder;
 
@@ -125,7 +126,7 @@ class Builder extends BaseBuilder
         }
         $cql = $this->grammar->compileSelect($this);
 
-        return $this->execute($cql);
+        return collect($this->execute($cql));
     }
 
     /**
@@ -231,7 +232,7 @@ class Builder extends BaseBuilder
     public function updateCollection($type, $column, $operation = null, $value = null)
     {
         //Check if the type is anyone in SET, LIST or MAP. else throw ERROR.
-        if (! in_array(strtolower($type), $this->collectionTypes)) {
+        if (!in_array(strtolower($type), $this->collectionTypes)) {
             throw new InvalidArgumentException("Invalid binding type: {$type}, Should be any one of ".implode(', ', $this->collectionTypes));
         }
 
@@ -262,7 +263,7 @@ class Builder extends BaseBuilder
      */
     public function addCollectionBinding($value, $type = 'updateCollection')
     {
-        if (! array_key_exists($type, $this->bindings)) {
+        if (!array_key_exists($type, $this->bindings)) {
             throw new InvalidArgumentException("Invalid binding type: {$type}.");
         }
         $this->bindings[$type][] = $value;
@@ -303,7 +304,7 @@ class Builder extends BaseBuilder
             return true;
         }
 
-        if (! is_array(reset($values))) {
+        if (!is_array(reset($values))) {
             $values = [$values];
         } else {
             // Here, we will sort the insert keys for every record so that each insert is

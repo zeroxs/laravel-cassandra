@@ -1,5 +1,5 @@
 {
-    "name": "shso/laravel-cassandra",
+    "name": "hey/laravel-cassandra",
     "type": "library",
     "description": "Cassandra based query builder for laravel.",
     "license": "MIT",
@@ -8,6 +8,7 @@
         "nosql",
         "laravel",
         "database",
+        "eloquent",
         "query builder",
         "cql"
     ],
@@ -24,24 +25,24 @@
     },
     "authors": [
         {
-            "name": "Shahin Sorkh",
-            "email": "sorkh.shahin@hotmail.com"
+            "name": "Diego Olivera",
+            "email": "diegolvr48@gmail.com"
         }
     ],
     "autoload": {
         "psr-4": {
-            "ShSo\\Lacassa\\": "src/"
+            "Hey\\Lacassa\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "ShSo\\Lacassa\\": "tests/"
+            "Hey\\Lacassa\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "ShSo\\Lacassa\\CassandraServiceProvider"
+                "Hey\\Lacassa\\CassandraServiceProvider"
             ]
         }
     },

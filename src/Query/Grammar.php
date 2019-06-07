@@ -1,6 +1,6 @@
 <?php
 
-namespace ShSo\Lacassa\Query;
+namespace Hey\Lacassa\Query;
 
 use Illuminate\Database\Query\Builder as BaseBuilder;
 use Illuminate\Database\Query\Grammars\Grammar as BaseGrammar;
@@ -8,6 +8,7 @@ use Illuminate\Database\Query\Grammars\Grammar as BaseGrammar;
 class Grammar extends BaseGrammar
 {
     protected $selectComponents = [
+        'aggregate',
         'columns',
         'from',
         'wheres',
@@ -18,7 +19,7 @@ class Grammar extends BaseGrammar
     /**
      * Compile an insert statement into CQL.
      *
-     * @param \ShSo\Lacassa\Query $query
+     * @param \Hey\Lacassa\Query $query
      * @param array $values
      *
      * @return string
@@ -73,7 +74,7 @@ class Grammar extends BaseGrammar
     /**
      * Compile a delete statement into CQL.
      *
-     * @param \ShSo\Lacassa\Query $query
+     * @param \Hey\Lacassa\Query $query
      *
      * @return string
      */
@@ -181,11 +182,11 @@ class Grammar extends BaseGrammar
             foreach ($value as $item) {
                 list($key, $value, $qoutk, $qoutv) = [$item[0], $item[1], $item['key'] ?? null, $item['value'] ?? null];
 
-                if (! is_bool($qoutk)) {
+                if (!is_bool($qoutk)) {
                     $qoutk = 'string' == strtolower(gettype($key));
                 }
 
-                if (! is_bool($qoutv)) {
+                if (!is_bool($qoutv)) {
                     $qoutv = 'string' == strtolower(gettype($value));
                 }
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace ShSo\Lacassa\Schema;
+namespace Hey\Lacassa\Schema;
 
 use Illuminate\Database\Connection;
 use Illuminate\Database\Schema\Blueprint as BaseBluprint;
@@ -35,7 +35,7 @@ class Blueprint extends BaseBluprint
     {
         return array_filter(
             $this->columns, function ($column) {
-                return ! $column->change;
+                return !$column->change;
             }
         );
     }
@@ -60,7 +60,7 @@ class Blueprint extends BaseBluprint
             $method = 'compile'.ucfirst($command->name);
 
             if (method_exists($grammar, $method)) {
-                if (! is_null($sql = $grammar->$method($this, $command, $connection))) {
+                if (!is_null($sql = $grammar->$method($this, $command, $connection))) {
                     $statements = array_merge($statements, (array) $sql);
                 }
             }
@@ -167,9 +167,13 @@ class Blueprint extends BaseBluprint
      *
      * @return \Illuminate\Support\Fluent
      */
-    public function frozen($column)
+    public function frozen($column, $frozenType = null)
     {
-        return $this->addColumn('frozen', $column);
+        if ($frozenType) {
+            return $this->addColumn('frozen', $column, compact('frozenType'));
+        } else {
+            return $this->addColumn('frozen', $column);
+        }
     }
 
     /**
@@ -243,7 +247,7 @@ class Blueprint extends BaseBluprint
      *
      * @return \Illuminate\Support\Fluent
      */
-    public function timestamp($column, $precision = 0)
+    public function timestamp($column)
     {
         return $this->addColumn('timestamp', $column);
     }
@@ -309,5 +313,31 @@ class Blueprint extends BaseBluprint
     public function varint($column)
     {
         return $this->addColumn('varint', $column);
+    }
+
+    /**
+     * Indicate that the table needs to be created.
+     *
+     * @return \Illuminate\Support\Fluent
+     */
+    public function createType()
+    {
+        return $this->addCommand('createType');
+    }
+
+    /**
+     * Determine if the blueprint has a create command.
+     *
+     * @return bool
+     */
+    protected function creating()
+    {
+        foreach ($this->commands as $command) {
+            if (in_array($command->name, ['create', 'createType'])) {
+                return true;
+            }
+        }
+
+        return false;
     }
 }

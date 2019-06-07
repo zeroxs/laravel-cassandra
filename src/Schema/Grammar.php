@@ -1,10 +1,10 @@
 <?php
 
-namespace ShSo\Lacassa\Schema;
+namespace Hey\Lacassa\Schema;
 
-use ShSo\Lacassa\Connection;
+use Hey\Lacassa\Connection;
 use Illuminate\Support\Fluent;
-use ShSo\Lacassa\Schema\Blueprint as Blueprint;
+use Hey\Lacassa\Schema\Blueprint as Blueprint;
 use Illuminate\Database\Schema\Blueprint as BaseBlueprint;
 use Illuminate\Database\Schema\Grammars\Grammar as BaseGrammar;
 
@@ -34,7 +34,7 @@ class Grammar extends BaseGrammar
      */
     public function compileTableExists()
     {
-        return 'select * from information_schema.tables where table_schema = ? and table_name = ?';
+        return 'select * from system_schema.tables where keyspace_name = ? and table_name = ?';
     }
 
     /**
@@ -44,7 +44,7 @@ class Grammar extends BaseGrammar
      */
     public function compileColumnListing()
     {
-        return 'select column_name from information_schema.columns where table_schema = ? and table_name = ?';
+        return 'select column_name from system_schema.columns where keyspace_name = ? and table_name = ?';
     }
 
     /**
@@ -68,6 +68,16 @@ class Grammar extends BaseGrammar
         return $this->compileCreateEngine(
            $sql, $connection, $blueprint
        );
+    }
+
+    public function compileCreateType(Blueprint $blueprint, Fluent $command, Connection $connection)
+    {
+        return sprintf(
+            '%s type %s (%s)',
+            'create',
+            $this->wrapTable($blueprint),
+            implode(', ', $this->getColumns($blueprint))
+        );
     }
 
     /**
@@ -105,7 +115,7 @@ class Grammar extends BaseGrammar
         // table is being created on. We will add these to the create table query.
         if (isset($blueprint->charset)) {
             $sql .= ' default character set '.$blueprint->charset;
-        } elseif (! is_null($charset = $connection->getConfig('charset'))) {
+        } elseif (!is_null($charset = $connection->getConfig('charset'))) {
             $sql .= ' default character set '.$charset;
         }
 
@@ -114,7 +124,7 @@ class Grammar extends BaseGrammar
         // connection that the query is targeting. We'll add it to this SQL query.
         if (isset($blueprint->collation)) {
             $sql .= ' collate '.$blueprint->collation;
-        } elseif (! is_null($collation = $connection->getConfig('collation'))) {
+        } elseif (!is_null($collation = $connection->getConfig('collation'))) {
             $sql .= ' collate '.$collation;
         }
 
@@ -134,7 +144,7 @@ class Grammar extends BaseGrammar
     {
         if (isset($blueprint->engine)) {
             return $sql.' engine = '.$blueprint->engine;
-        } elseif (! is_null($engine = $connection->getConfig('engine'))) {
+        } elseif (!is_null($engine = $connection->getConfig('engine'))) {
             return $sql.' engine = '.$engine;
         }
 
@@ -208,13 +218,14 @@ class Grammar extends BaseGrammar
      */
     protected function compileKey(Blueprint $blueprint, Fluent $command, $type)
     {
-        return sprintf('alter table %s add %s %s%s(%s)',
-           $this->wrapTable($blueprint),
-           $type,
-           $this->wrap($command->index),
-           $command->algorithm ? ' using '.$command->algorithm : '',
-           $this->columnize($command->columns)
-       );
+        return sprintf(
+            'alter table %s add %s %s%s(%s)',
+            $this->wrapTable($blueprint),
+            $type,
+            $this->wrap($command->index),
+            $command->algorithm ? ' using '.$command->algorithm : '',
+            $this->columnize($command->columns)
+        );
     }
 
     /**
@@ -432,7 +443,11 @@ class Grammar extends BaseGrammar
      */
     protected function typeFrozen(Fluent $column)
     {
-        return 'frozen';
+        if (isset($column->frozenType)) {
+            return 'frozen<' . $column->frozenType . '>';
+        } else {
+            return 'frozen';
+        }
     }
 
     /**
@@ -873,7 +888,7 @@ class Grammar extends BaseGrammar
      */
     protected function modifyVirtualAs(Blueprint $blueprint, Fluent $column)
     {
-        if (! is_null($column->virtualAs)) {
+        if (!is_null($column->virtualAs)) {
             return " as ({$column->virtualAs})";
         }
     }
@@ -888,7 +903,7 @@ class Grammar extends BaseGrammar
      */
     protected function modifyStoredAs(Blueprint $blueprint, Fluent $column)
     {
-        if (! is_null($column->storedAs)) {
+        if (!is_null($column->storedAs)) {
             return " as ({$column->storedAs}) stored";
         }
     }
@@ -918,7 +933,7 @@ class Grammar extends BaseGrammar
      */
     protected function modifyCharset(Blueprint $blueprint, Fluent $column)
     {
-        if (! is_null($column->charset)) {
+        if (!is_null($column->charset)) {
             return ' character set '.$column->charset;
         }
     }
@@ -933,7 +948,7 @@ class Grammar extends BaseGrammar
      */
     protected function modifyCollate(Blueprint $blueprint, Fluent $column)
     {
-        if (! is_null($column->collation)) {
+        if (!is_null($column->collation)) {
             return ' collate '.$column->collation;
         }
     }
@@ -963,7 +978,7 @@ class Grammar extends BaseGrammar
      */
     protected function modifyDefault(Blueprint $blueprint, Fluent $column)
     {
-        if (! is_null($column->default)) {
+        if (!is_null($column->default)) {
             return ' default '.$this->getDefaultValue($column->default);
         }
     }
@@ -993,7 +1008,7 @@ class Grammar extends BaseGrammar
      */
     protected function modifyFirst(Blueprint $blueprint, Fluent $column)
     {
-        if (! is_null($column->first)) {
+        if (!is_null($column->first)) {
             return ' first';
         }
     }
@@ -1008,7 +1023,7 @@ class Grammar extends BaseGrammar
      */
     protected function modifyAfter(Blueprint $blueprint, Fluent $column)
     {
-        if (! is_null($column->after)) {
+        if (!is_null($column->after)) {
             return ' after '.$this->wrap($column->after);
         }
     }
@@ -1023,7 +1038,7 @@ class Grammar extends BaseGrammar
      */
     protected function modifyComment(Blueprint $blueprint, Fluent $column)
     {
-        if (! is_null($column->comment)) {
+        if (!is_null($column->comment)) {
             return " comment '".$column->comment."'";
         }
     }

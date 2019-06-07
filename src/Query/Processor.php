@@ -1,6 +1,6 @@
 <?php
 
-namespace ShSo\Lacassa\Query;
+namespace Hey\Lacassa\Query;
 
 use Illuminate\Database\Query\Processors\Processor as BaseProcessor;
 
