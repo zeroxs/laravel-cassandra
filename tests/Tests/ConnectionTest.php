@@ -1,16 +1,16 @@
 <?php
 
-namespace ShSo\Lacassa\Tests;
+namespace Hey\Lacassa\Tests;
 
 use DB;
 use Cassandra\Rows;
 use Cassandra\FutureRows;
-use ShSo\Lacassa\TestCase;
-use ShSo\Lacassa\Connection;
-use ShSo\Lacassa\Query\Builder;
+use Hey\Lacassa\TestCase;
+use Hey\Lacassa\Connection;
+use Hey\Lacassa\Query\Builder;
 use Cassandra\DefaultSession as CassandraSession;
-use ShSo\Lacassa\Schema\Builder as SchemaBuilder;
-use ShSo\Lacassa\Schema\Grammar as SchemaGrammar;
+use Hey\Lacassa\Schema\Builder as SchemaBuilder;
+use Hey\Lacassa\Schema\Grammar as SchemaGrammar;
 
 class ConnectionTest extends TestCase
 {

@@ -36,14 +36,14 @@
     <body>
         <pre class="brush: php">&lt;?php
 
-namespace ShSo\Lacassa;
+namespace Hey\Lacassa;
 
 use Cassandra;
-use ShSo\Lacassa\Query\Builder as QueryBuilder;
-use ShSo\Lacassa\Query\Grammar as QueryGrammar;
-use ShSo\Lacassa\Schema\Builder as SchemaBuilder;
-use ShSo\Lacassa\Schema\Grammar as SchemaGrammar;
-use ShSo\Lacassa\Query\Processor as QueryProcessor;
+use Hey\Lacassa\Query\Builder as QueryBuilder;
+use Hey\Lacassa\Query\Grammar as QueryGrammar;
+use Hey\Lacassa\Schema\Builder as SchemaBuilder;
+use Hey\Lacassa\Schema\Grammar as SchemaGrammar;
+use Hey\Lacassa\Query\Processor as QueryProcessor;
 use Illuminate\Database\Connection as BaseConnection;
 
 class Connection extends BaseConnection
@@ -76,7 +76,7 @@ class Connection extends BaseConnection
      *
      * @param string $table
      *
-     * @return \ShSo\Lacassa\Query\Builder
+     * @return \Hey\Lacassa\Query\Builder
      */
     public function table($table)
     {
@@ -84,7 +84,7 @@ class Connection extends BaseConnection
     }
 
     /**
-     * @return \ShSo\Lacassa\Schema\Builder
+     * @return \Hey\Lacassa\Schema\Builder
      */
     public function getSchemaBuilder()
     {
@@ -94,7 +94,7 @@ class Connection extends BaseConnection
     /**
      * Returns the connection grammer.
      *
-     * @return \ShSo\Lacassa\Schema\Grammar
+     * @return \Hey\Lacassa\Schema\Grammar
      */
     public function getSchemaGrammar()
     {
@@ -167,7 +167,7 @@ class Connection extends BaseConnection
     }
 
     /**
-     * @return \ShSo\Lacassa\Query\Processor
+     * @return \Hey\Lacassa\Query\Processor
      */
     protected function getDefaultPostProcessor()
     {
@@ -175,7 +175,7 @@ class Connection extends BaseConnection
     }
 
     /**
-     * @return \ShSo\Lacassa\Query\Builder
+     * @return \Hey\Lacassa\Query\Builder
      */
     protected function getDefaultQueryBuilder()
     {
@@ -183,7 +183,7 @@ class Connection extends BaseConnection
     }
 
     /**
-     * @return \ShSo\Lacassa\Query\Grammar
+     * @return \Hey\Lacassa\Query\Grammar
      */
     protected function getDefaultQueryGrammar()
     {
@@ -191,7 +191,7 @@ class Connection extends BaseConnection
     }
 
     /**
-     * @return \ShSo\Lacassa\Schema\Grammar
+     * @return \Hey\Lacassa\Schema\Grammar
      */
     protected function getDefaultSchemaGrammar()
     {

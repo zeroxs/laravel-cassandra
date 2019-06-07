@@ -1,6 +1,6 @@
 <?php
 
-namespace ShSo\Lacassa;
+namespace Hey\Lacassa;
 
 use Cassandra;
 use Orchestra\Testbench\TestCase as Orchestra;
@@ -20,7 +20,7 @@ class TestCase extends Orchestra
 
     protected function getPackageProviders($app)
     {
-        return ['ShSo\\Lacassa\\CassandraServiceProvider'];
+        return ['Hey\\Lacassa\\CassandraServiceProvider'];
     }
 
     protected function getEnvironmentSetUp($app)

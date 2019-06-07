@@ -9,18 +9,18 @@
     </docblock>
     <namespace-alias name="Cassandra">\Cassandra</namespace-alias>
     <namespace-alias name="ServiceProvider">\Illuminate\Support\ServiceProvider</namespace-alias>
-    <class final="false" abstract="false" namespace="ShSo\Lacassa" line="8" package="Default">
+    <class final="false" abstract="false" namespace="Hey\Lacassa" line="8" package="Default">
       <extends>\Illuminate\Support\ServiceProvider</extends>
       <name>CassandraServiceProvider</name>
-      <full_name>\ShSo\Lacassa\CassandraServiceProvider</full_name>
+      <full_name>\Hey\Lacassa\CassandraServiceProvider</full_name>
       <docblock line="8">
         <description></description>
         <long-description></long-description>
         <tag name="package" line="8" description="Default"/>
       </docblock>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa" line="15" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa" line="15" package="Default">
         <name>boot</name>
-        <full_name>\ShSo\Lacassa\CassandraServiceProvider::boot()</full_name>
+        <full_name>\Hey\Lacassa\CassandraServiceProvider::boot()</full_name>
         <docblock line="15">
           <description>Bootstrap the application services.</description>
           <long-description></long-description>
@@ -29,9 +29,9 @@
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa" line="25" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa" line="25" package="Default">
         <name>register</name>
-        <full_name>\ShSo\Lacassa\CassandraServiceProvider::register()</full_name>
+        <full_name>\Hey\Lacassa\CassandraServiceProvider::register()</full_name>
         <docblock line="25">
           <description>Register the application services.</description>
           <long-description></long-description>
@@ -43,7 +43,7 @@
     </class>
     <parse_markers>
       <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
-      <error line="8" code="PPC:ERR-50005">No summary for class \ShSo\Lacassa\CassandraServiceProvider</error>
+      <error line="8" code="PPC:ERR-50005">No summary for class \Hey\Lacassa\CassandraServiceProvider</error>
     </parse_markers>
     <source>eJytUstOwzAQvPsr9lApSdXHBxTKoyckDogcCQc/toml1LZsJyCh/DuOk9A2cMQX73pnZke7vrkzlSFE0RM6QzlCXuW6eKacOkd3hDQO4dDHStiQ9+lTXTcnqajHIm+M0dYXOdpWcnyxupUCbeDxOpDOzBkA8NOjEg5m7+SLQDjb5TLesIRHrb3zlhrwFQI1ppaceqkVuIHqNiN0Ytxb9I1V0GopxrdtvE3DAhmOjeJRgAXpNIuloW1sPWA7MjfyiqV0Plj/dx92VP7DCzwIAYJ6ymgYvLCyRbv5qS98Jd16H8ys9xadrlupyjQRLFmd1dOFYNmFaCQKtt4PK0gTPu3omsW1OspyBYv+a8wFosiAeEt6QPIOtwN0R34hx0Eo/ICDVgpji6lDtrvCdxf5FHekI99scMLp</source>
   </file>
@@ -54,20 +54,20 @@
       <tag name="package" line="0" description="Default"/>
     </docblock>
     <namespace-alias name="Closure">\Closure</namespace-alias>
-    <namespace-alias name="Connection">\ShSo\Lacassa\Connection</namespace-alias>
+    <namespace-alias name="Connection">\Hey\Lacassa\Connection</namespace-alias>
     <namespace-alias name="BaseBuilder">\Illuminate\Database\Schema\Builder</namespace-alias>
-    <class final="false" abstract="false" namespace="ShSo\Lacassa\Schema" line="9" package="Default">
+    <class final="false" abstract="false" namespace="Hey\Lacassa\Schema" line="9" package="Default">
       <extends>\Illuminate\Database\Schema\Builder</extends>
       <name>Builder</name>
-      <full_name>\ShSo\Lacassa\Schema\Builder</full_name>
+      <full_name>\Hey\Lacassa\Schema\Builder</full_name>
       <docblock line="9">
         <description></description>
         <long-description></long-description>
         <tag name="package" line="9" description="Default"/>
       </docblock>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa\Schema" line="14" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa\Schema" line="14" package="Default">
         <name>__construct</name>
-        <full_name>\ShSo\Lacassa\Schema\Builder::__construct()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Builder::__construct()</full_name>
         <docblock line="14">
           <description></description>
           <long-description></long-description>
@@ -78,17 +78,17 @@
         <argument line="0" by_reference="false">
           <name>$connection</name>
           <default></default>
-          <type>\ShSo\Lacassa\Connection</type>
+          <type>\Hey\Lacassa\Connection</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ShSo\Lacassa\Schema" line="23" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Hey\Lacassa\Schema" line="23" package="Default">
         <name>createBlueprint</name>
-        <full_name>\ShSo\Lacassa\Schema\Builder::createBlueprint()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Builder::createBlueprint()</full_name>
         <docblock line="23">
           <description></description>
           <long-description></long-description>
-          <tag name="return" line="23" description="" type="\ShSo\Lacassa\Schema\Builder">
-            <type>\ShSo\Lacassa\Schema\Builder</type>
+          <tag name="return" line="23" description="" type="\Hey\Lacassa\Schema\Builder">
+            <type>\Hey\Lacassa\Schema\Builder</type>
           </tag>
         </docblock>
         <argument line="0" by_reference="false">
@@ -105,7 +105,7 @@
     </class>
     <parse_markers>
       <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
-      <error line="9" code="PPC:ERR-50005">No summary for class \ShSo\Lacassa\Schema\Builder</error>
+      <error line="9" code="PPC:ERR-50005">No summary for class \Hey\Lacassa\Schema\Builder</error>
       <error line="14" code="PPC:ERR-50008">No summary for method __construct()</error>
       <error line="23" code="PPC:ERR-50008">No summary for method createBlueprint()</error>
     </parse_markers>
@@ -117,23 +117,23 @@
       <long-description></long-description>
       <tag name="package" line="0" description="Default"/>
     </docblock>
-    <namespace-alias name="Connection">\ShSo\Lacassa\Connection</namespace-alias>
+    <namespace-alias name="Connection">\Hey\Lacassa\Connection</namespace-alias>
     <namespace-alias name="Fluent">\Illuminate\Support\Fluent</namespace-alias>
-    <namespace-alias name="Blueprint">\ShSo\Lacassa\Schema\Blueprint</namespace-alias>
+    <namespace-alias name="Blueprint">\Hey\Lacassa\Schema\Blueprint</namespace-alias>
     <namespace-alias name="BaseBlueprint">\Illuminate\Database\Schema\Blueprint</namespace-alias>
     <namespace-alias name="BaseGrammar">\Illuminate\Database\Schema\Grammars\Grammar</namespace-alias>
-    <class final="false" abstract="false" namespace="ShSo\Lacassa\Schema" line="11" package="Default">
+    <class final="false" abstract="false" namespace="Hey\Lacassa\Schema" line="11" package="Default">
       <extends>\Illuminate\Database\Schema\Grammars\Grammar</extends>
       <name>Grammar</name>
-      <full_name>\ShSo\Lacassa\Schema\Grammar</full_name>
+      <full_name>\Hey\Lacassa\Schema\Grammar</full_name>
       <docblock line="11">
         <description></description>
         <long-description></long-description>
         <tag name="package" line="11" description="Default"/>
       </docblock>
-      <property static="false" visibility="protected" namespace="ShSo\Lacassa\Schema" line="18" package="Default">
+      <property static="false" visibility="protected" namespace="Hey\Lacassa\Schema" line="18" package="Default">
         <name>$modifiers</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::modifiers</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::modifiers</full_name>
         <default>array('VirtualAs', 'StoredAs', 'Unsigned', 'Charset', 'Collate', 'Nullable', 'Default', 'Increment', 'Comment', 'After', 'First')</default>
         <docblock line="18">
           <description>The possible column modifiers.</description>
@@ -143,9 +143,9 @@
           </tag>
         </docblock>
       </property>
-      <property static="false" visibility="protected" namespace="ShSo\Lacassa\Schema" line="28" package="Default">
+      <property static="false" visibility="protected" namespace="Hey\Lacassa\Schema" line="28" package="Default">
         <name>$serials</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::serials</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::serials</full_name>
         <default>array('bigInteger', 'integer', 'mediumInteger', 'smallInteger', 'tinyInteger')</default>
         <docblock line="28">
           <description>The possible column serials.</description>
@@ -155,9 +155,9 @@
           </tag>
         </docblock>
       </property>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa\Schema" line="35" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa\Schema" line="35" package="Default">
         <name>compileTableExists</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::compileTableExists()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::compileTableExists()</full_name>
         <docblock line="35">
           <description>Compile the query to determine the list of tables.</description>
           <long-description></long-description>
@@ -166,9 +166,9 @@
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa\Schema" line="45" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa\Schema" line="45" package="Default">
         <name>compileColumnListing</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::compileColumnListing()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::compileColumnListing()</full_name>
         <docblock line="45">
           <description>Compile the query to determine the list of columns.</description>
           <long-description></long-description>
@@ -177,9 +177,9 @@
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa\Schema" line="59" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa\Schema" line="59" package="Default">
         <name>compileCreate</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::compileCreate()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::compileCreate()</full_name>
         <docblock line="59">
           <description>Compile a create table command.</description>
           <long-description></long-description>
@@ -212,9 +212,9 @@
           <type>\Illuminate\Database\Connection</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ShSo\Lacassa\Schema" line="82" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Hey\Lacassa\Schema" line="82" package="Default">
         <name>compileCreateTable</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::compileCreateTable()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::compileCreateTable()</full_name>
         <docblock line="82">
           <description>Create the main create table clause.</description>
           <long-description></long-description>
@@ -247,9 +247,9 @@
           <type>\Illuminate\Database\Connection</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ShSo\Lacassa\Schema" line="101" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Hey\Lacassa\Schema" line="101" package="Default">
         <name>compileCreateEncoding</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::compileCreateEncoding()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::compileCreateEncoding()</full_name>
         <docblock line="101">
           <description>Append the character set specifications to a command.</description>
           <long-description></long-description>
@@ -282,9 +282,9 @@
           <type>\Illuminate\Database\Schema\Blueprint</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ShSo\Lacassa\Schema" line="133" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Hey\Lacassa\Schema" line="133" package="Default">
         <name>compileCreateEngine</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::compileCreateEngine()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::compileCreateEngine()</full_name>
         <docblock line="133">
           <description>Append the engine specifications to a command.</description>
           <long-description></long-description>
@@ -317,9 +317,9 @@
           <type>\Illuminate\Database\Schema\Blueprint</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa\Schema" line="152" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa\Schema" line="152" package="Default">
         <name>compileAdd</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::compileAdd()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::compileAdd()</full_name>
         <docblock line="152">
           <description>Compile an add column command.</description>
           <long-description></long-description>
@@ -344,9 +344,9 @@
           <type>\Illuminate\Support\Fluent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa\Schema" line="167" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa\Schema" line="167" package="Default">
         <name>compilePrimary</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::compilePrimary()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::compilePrimary()</full_name>
         <docblock line="167">
           <description>Compile a primary key command.</description>
           <long-description></long-description>
@@ -371,9 +371,9 @@
           <type>\Illuminate\Support\Fluent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa\Schema" line="182" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa\Schema" line="182" package="Default">
         <name>compileUnique</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::compileUnique()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::compileUnique()</full_name>
         <docblock line="182">
           <description>Compile a unique key command.</description>
           <long-description></long-description>
@@ -398,9 +398,9 @@
           <type>\Illuminate\Support\Fluent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa\Schema" line="195" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa\Schema" line="195" package="Default">
         <name>compileIndex</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::compileIndex()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::compileIndex()</full_name>
         <docblock line="195">
           <description>Compile a plain index key command.</description>
           <long-description></long-description>
@@ -425,9 +425,9 @@
           <type>\Illuminate\Support\Fluent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ShSo\Lacassa\Schema" line="209" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Hey\Lacassa\Schema" line="209" package="Default">
         <name>compileKey</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::compileKey()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::compileKey()</full_name>
         <docblock line="209">
           <description>Compile an index creation command.</description>
           <long-description></long-description>
@@ -460,9 +460,9 @@
           <type>string</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa\Schema" line="228" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa\Schema" line="228" package="Default">
         <name>compileDrop</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::compileDrop()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::compileDrop()</full_name>
         <docblock line="228">
           <description>Compile a drop table command.</description>
           <long-description></long-description>
@@ -487,9 +487,9 @@
           <type>\Illuminate\Support\Fluent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa\Schema" line="241" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa\Schema" line="241" package="Default">
         <name>compileDropIfExists</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::compileDropIfExists()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::compileDropIfExists()</full_name>
         <docblock line="241">
           <description>Compile a drop table (if exists) command.</description>
           <long-description></long-description>
@@ -514,9 +514,9 @@
           <type>\Illuminate\Support\Fluent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa\Schema" line="254" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa\Schema" line="254" package="Default">
         <name>compileDropColumn</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::compileDropColumn()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::compileDropColumn()</full_name>
         <docblock line="254">
           <description>Compile a drop column command.</description>
           <long-description></long-description>
@@ -541,9 +541,9 @@
           <type>\Illuminate\Support\Fluent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa\Schema" line="269" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa\Schema" line="269" package="Default">
         <name>compileDropPrimary</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::compileDropPrimary()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::compileDropPrimary()</full_name>
         <docblock line="269">
           <description>Compile a drop primary key command.</description>
           <long-description></long-description>
@@ -568,9 +568,9 @@
           <type>\Illuminate\Support\Fluent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa\Schema" line="282" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa\Schema" line="282" package="Default">
         <name>compileDropUnique</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::compileDropUnique()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::compileDropUnique()</full_name>
         <docblock line="282">
           <description>Compile a drop unique key command.</description>
           <long-description></long-description>
@@ -595,9 +595,9 @@
           <type>\Illuminate\Support\Fluent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa\Schema" line="297" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa\Schema" line="297" package="Default">
         <name>compileDropIndex</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::compileDropIndex()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::compileDropIndex()</full_name>
         <docblock line="297">
           <description>Compile a drop index command.</description>
           <long-description></long-description>
@@ -622,9 +622,9 @@
           <type>\Illuminate\Support\Fluent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa\Schema" line="312" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa\Schema" line="312" package="Default">
         <name>compileDropForeign</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::compileDropForeign()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::compileDropForeign()</full_name>
         <docblock line="312">
           <description>Compile a drop foreign key command.</description>
           <long-description></long-description>
@@ -649,9 +649,9 @@
           <type>\Illuminate\Support\Fluent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa\Schema" line="327" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa\Schema" line="327" package="Default">
         <name>compileRename</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::compileRename()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::compileRename()</full_name>
         <docblock line="327">
           <description>Compile a rename table command.</description>
           <long-description></long-description>
@@ -676,9 +676,9 @@
           <type>\Illuminate\Support\Fluent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa\Schema" line="339" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa\Schema" line="339" package="Default">
         <name>compileEnableForeignKeyConstraints</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::compileEnableForeignKeyConstraints()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::compileEnableForeignKeyConstraints()</full_name>
         <docblock line="339">
           <description>Compile the command to enable foreign key constraints.</description>
           <long-description></long-description>
@@ -687,9 +687,9 @@
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa\Schema" line="349" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa\Schema" line="349" package="Default">
         <name>compileDisableForeignKeyConstraints</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::compileDisableForeignKeyConstraints()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::compileDisableForeignKeyConstraints()</full_name>
         <docblock line="349">
           <description>Compile the command to disable foreign key constraints.</description>
           <long-description></long-description>
@@ -698,9 +698,9 @@
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ShSo\Lacassa\Schema" line="361" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Hey\Lacassa\Schema" line="361" package="Default">
         <name>typeChar</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::typeChar()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::typeChar()</full_name>
         <docblock line="361">
           <description>Create the column definition for a char type.</description>
           <long-description></long-description>
@@ -717,9 +717,9 @@
           <type>\Illuminate\Support\Fluent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ShSo\Lacassa\Schema" line="373" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Hey\Lacassa\Schema" line="373" package="Default">
         <name>typeString</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::typeString()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::typeString()</full_name>
         <docblock line="373">
           <description>Create the column definition for a string type.</description>
           <long-description></long-description>
@@ -736,9 +736,9 @@
           <type>\Illuminate\Support\Fluent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ShSo\Lacassa\Schema" line="385" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Hey\Lacassa\Schema" line="385" package="Default">
         <name>typeText</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::typeText()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::typeText()</full_name>
         <docblock line="385">
           <description>Create the column definition for a text type.</description>
           <long-description></long-description>
@@ -755,9 +755,9 @@
           <type>\Illuminate\Support\Fluent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ShSo\Lacassa\Schema" line="397" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Hey\Lacassa\Schema" line="397" package="Default">
         <name>typeBigint</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::typeBigint()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::typeBigint()</full_name>
         <docblock line="397">
           <description>Create the column definition for a text type.</description>
           <long-description></long-description>
@@ -774,9 +774,9 @@
           <type>\Illuminate\Support\Fluent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ShSo\Lacassa\Schema" line="409" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Hey\Lacassa\Schema" line="409" package="Default">
         <name>typeBlob</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::typeBlob()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::typeBlob()</full_name>
         <docblock line="409">
           <description>Create the column definition for a blob type.</description>
           <long-description></long-description>
@@ -793,9 +793,9 @@
           <type>\Illuminate\Support\Fluent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ShSo\Lacassa\Schema" line="421" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Hey\Lacassa\Schema" line="421" package="Default">
         <name>typeCounter</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::typeCounter()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::typeCounter()</full_name>
         <docblock line="421">
           <description>Create the column definition for a counter type.</description>
           <long-description></long-description>
@@ -812,9 +812,9 @@
           <type>\Illuminate\Support\Fluent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ShSo\Lacassa\Schema" line="433" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Hey\Lacassa\Schema" line="433" package="Default">
         <name>typeFrozen</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::typeFrozen()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::typeFrozen()</full_name>
         <docblock line="433">
           <description>Create the column definition for a frozen type.</description>
           <long-description></long-description>
@@ -831,9 +831,9 @@
           <type>\Illuminate\Support\Fluent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ShSo\Lacassa\Schema" line="445" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Hey\Lacassa\Schema" line="445" package="Default">
         <name>typeInet</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::typeInet()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::typeInet()</full_name>
         <docblock line="445">
           <description>Create the column definition for a inet type.</description>
           <long-description></long-description>
@@ -850,9 +850,9 @@
           <type>\Illuminate\Support\Fluent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ShSo\Lacassa\Schema" line="457" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Hey\Lacassa\Schema" line="457" package="Default">
         <name>typeInt</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::typeInt()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::typeInt()</full_name>
         <docblock line="457">
           <description>Create the column definition for a int type.</description>
           <long-description></long-description>
@@ -869,9 +869,9 @@
           <type>\Illuminate\Support\Fluent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ShSo\Lacassa\Schema" line="469" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Hey\Lacassa\Schema" line="469" package="Default">
         <name>typeList</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::typeList()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::typeList()</full_name>
         <docblock line="469">
           <description>Create the column definition for a list type.</description>
           <long-description></long-description>
@@ -888,9 +888,9 @@
           <type>\Illuminate\Support\Fluent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ShSo\Lacassa\Schema" line="481" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Hey\Lacassa\Schema" line="481" package="Default">
         <name>typeMap</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::typeMap()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::typeMap()</full_name>
         <docblock line="481">
           <description>Create the column definition for a map type.</description>
           <long-description></long-description>
@@ -907,9 +907,9 @@
           <type>\Illuminate\Support\Fluent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ShSo\Lacassa\Schema" line="493" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Hey\Lacassa\Schema" line="493" package="Default">
         <name>typeSet</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::typeSet()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::typeSet()</full_name>
         <docblock line="493">
           <description>Create the column definition for a set type.</description>
           <long-description></long-description>
@@ -926,9 +926,9 @@
           <type>\Illuminate\Support\Fluent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ShSo\Lacassa\Schema" line="505" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Hey\Lacassa\Schema" line="505" package="Default">
         <name>typeTimeuuid</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::typeTimeuuid()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::typeTimeuuid()</full_name>
         <docblock line="505">
           <description>Create the column definition for a timeuuid type.</description>
           <long-description></long-description>
@@ -945,9 +945,9 @@
           <type>\Illuminate\Support\Fluent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ShSo\Lacassa\Schema" line="517" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Hey\Lacassa\Schema" line="517" package="Default">
         <name>typeTuple</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::typeTuple()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::typeTuple()</full_name>
         <docblock line="517">
           <description>Create the column definition for a tuple type.</description>
           <long-description></long-description>
@@ -964,9 +964,9 @@
           <type>\Illuminate\Support\Fluent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ShSo\Lacassa\Schema" line="529" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Hey\Lacassa\Schema" line="529" package="Default">
         <name>typeVarchar</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::typeVarchar()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::typeVarchar()</full_name>
         <docblock line="529">
           <description>Create the column definition for a varchar type.</description>
           <long-description></long-description>
@@ -983,9 +983,9 @@
           <type>\Illuminate\Support\Fluent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ShSo\Lacassa\Schema" line="541" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Hey\Lacassa\Schema" line="541" package="Default">
         <name>typeVarint</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::typeVarint()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::typeVarint()</full_name>
         <docblock line="541">
           <description>Create the column definition for a varint type.</description>
           <long-description></long-description>
@@ -1002,9 +1002,9 @@
           <type>\Illuminate\Support\Fluent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ShSo\Lacassa\Schema" line="553" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Hey\Lacassa\Schema" line="553" package="Default">
         <name>typeMediumText</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::typeMediumText()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::typeMediumText()</full_name>
         <docblock line="553">
           <description>Create the column definition for a medium text type.</description>
           <long-description></long-description>
@@ -1021,9 +1021,9 @@
           <type>\Illuminate\Support\Fluent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ShSo\Lacassa\Schema" line="565" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Hey\Lacassa\Schema" line="565" package="Default">
         <name>typeLongText</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::typeLongText()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::typeLongText()</full_name>
         <docblock line="565">
           <description>Create the column definition for a long text type.</description>
           <long-description></long-description>
@@ -1040,9 +1040,9 @@
           <type>\Illuminate\Support\Fluent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ShSo\Lacassa\Schema" line="577" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Hey\Lacassa\Schema" line="577" package="Default">
         <name>typeBigInteger</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::typeBigInteger()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::typeBigInteger()</full_name>
         <docblock line="577">
           <description>Create the column definition for a big integer type.</description>
           <long-description></long-description>
@@ -1059,9 +1059,9 @@
           <type>\Illuminate\Support\Fluent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ShSo\Lacassa\Schema" line="589" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Hey\Lacassa\Schema" line="589" package="Default">
         <name>typeInteger</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::typeInteger()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::typeInteger()</full_name>
         <docblock line="589">
           <description>Create the column definition for an integer type.</description>
           <long-description></long-description>
@@ -1078,9 +1078,9 @@
           <type>\Illuminate\Support\Fluent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ShSo\Lacassa\Schema" line="601" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Hey\Lacassa\Schema" line="601" package="Default">
         <name>typeMediumInteger</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::typeMediumInteger()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::typeMediumInteger()</full_name>
         <docblock line="601">
           <description>Create the column definition for a medium integer type.</description>
           <long-description></long-description>
@@ -1097,9 +1097,9 @@
           <type>\Illuminate\Support\Fluent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ShSo\Lacassa\Schema" line="613" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Hey\Lacassa\Schema" line="613" package="Default">
         <name>typeTinyInteger</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::typeTinyInteger()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::typeTinyInteger()</full_name>
         <docblock line="613">
           <description>Create the column definition for a tiny integer type.</description>
           <long-description></long-description>
@@ -1116,9 +1116,9 @@
           <type>\Illuminate\Support\Fluent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ShSo\Lacassa\Schema" line="625" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Hey\Lacassa\Schema" line="625" package="Default">
         <name>typeSmallInteger</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::typeSmallInteger()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::typeSmallInteger()</full_name>
         <docblock line="625">
           <description>Create the column definition for a small integer type.</description>
           <long-description></long-description>
@@ -1135,9 +1135,9 @@
           <type>\Illuminate\Support\Fluent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ShSo\Lacassa\Schema" line="637" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Hey\Lacassa\Schema" line="637" package="Default">
         <name>typeFloat</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::typeFloat()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::typeFloat()</full_name>
         <docblock line="637">
           <description>Create the column definition for a float type.</description>
           <long-description></long-description>
@@ -1154,9 +1154,9 @@
           <type>\Illuminate\Support\Fluent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ShSo\Lacassa\Schema" line="649" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Hey\Lacassa\Schema" line="649" package="Default">
         <name>typeDouble</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::typeDouble()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::typeDouble()</full_name>
         <docblock line="649">
           <description>Create the column definition for a double type.</description>
           <long-description></long-description>
@@ -1173,9 +1173,9 @@
           <type>\Illuminate\Support\Fluent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ShSo\Lacassa\Schema" line="661" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Hey\Lacassa\Schema" line="661" package="Default">
         <name>typeDecimal</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::typeDecimal()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::typeDecimal()</full_name>
         <docblock line="661">
           <description>Create the column definition for a decimal type.</description>
           <long-description></long-description>
@@ -1192,9 +1192,9 @@
           <type>\Illuminate\Support\Fluent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ShSo\Lacassa\Schema" line="673" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Hey\Lacassa\Schema" line="673" package="Default">
         <name>typeBoolean</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::typeBoolean()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::typeBoolean()</full_name>
         <docblock line="673">
           <description>Create the column definition for a boolean type.</description>
           <long-description></long-description>
@@ -1211,9 +1211,9 @@
           <type>\Illuminate\Support\Fluent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ShSo\Lacassa\Schema" line="685" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Hey\Lacassa\Schema" line="685" package="Default">
         <name>typeAscii</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::typeAscii()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::typeAscii()</full_name>
         <docblock line="685">
           <description>Create the column definition for a boolean type.</description>
           <long-description></long-description>
@@ -1230,9 +1230,9 @@
           <type>\Illuminate\Support\Fluent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ShSo\Lacassa\Schema" line="697" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Hey\Lacassa\Schema" line="697" package="Default">
         <name>typeEnum</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::typeEnum()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::typeEnum()</full_name>
         <docblock line="697">
           <description>Create the column definition for an enum type.</description>
           <long-description></long-description>
@@ -1249,9 +1249,9 @@
           <type>\Illuminate\Support\Fluent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ShSo\Lacassa\Schema" line="709" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Hey\Lacassa\Schema" line="709" package="Default">
         <name>typeJson</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::typeJson()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::typeJson()</full_name>
         <docblock line="709">
           <description>Create the column definition for a json type.</description>
           <long-description></long-description>
@@ -1268,9 +1268,9 @@
           <type>\Illuminate\Support\Fluent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ShSo\Lacassa\Schema" line="721" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Hey\Lacassa\Schema" line="721" package="Default">
         <name>typeJsonb</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::typeJsonb()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::typeJsonb()</full_name>
         <docblock line="721">
           <description>Create the column definition for a jsonb type.</description>
           <long-description></long-description>
@@ -1287,9 +1287,9 @@
           <type>\Illuminate\Support\Fluent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ShSo\Lacassa\Schema" line="733" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Hey\Lacassa\Schema" line="733" package="Default">
         <name>typeDate</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::typeDate()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::typeDate()</full_name>
         <docblock line="733">
           <description>Create the column definition for a date type.</description>
           <long-description></long-description>
@@ -1306,9 +1306,9 @@
           <type>\Illuminate\Support\Fluent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ShSo\Lacassa\Schema" line="745" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Hey\Lacassa\Schema" line="745" package="Default">
         <name>typeDateTime</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::typeDateTime()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::typeDateTime()</full_name>
         <docblock line="745">
           <description>Create the column definition for a date-time type.</description>
           <long-description></long-description>
@@ -1325,9 +1325,9 @@
           <type>\Illuminate\Support\Fluent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ShSo\Lacassa\Schema" line="757" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Hey\Lacassa\Schema" line="757" package="Default">
         <name>typeDateTimeTz</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::typeDateTimeTz()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::typeDateTimeTz()</full_name>
         <docblock line="757">
           <description>Create the column definition for a date-time type.</description>
           <long-description></long-description>
@@ -1344,9 +1344,9 @@
           <type>\Illuminate\Support\Fluent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ShSo\Lacassa\Schema" line="769" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Hey\Lacassa\Schema" line="769" package="Default">
         <name>typeTime</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::typeTime()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::typeTime()</full_name>
         <docblock line="769">
           <description>Create the column definition for a time type.</description>
           <long-description></long-description>
@@ -1363,9 +1363,9 @@
           <type>\Illuminate\Support\Fluent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ShSo\Lacassa\Schema" line="781" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Hey\Lacassa\Schema" line="781" package="Default">
         <name>typeTimeTz</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::typeTimeTz()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::typeTimeTz()</full_name>
         <docblock line="781">
           <description>Create the column definition for a time type.</description>
           <long-description></long-description>
@@ -1382,9 +1382,9 @@
           <type>\Illuminate\Support\Fluent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ShSo\Lacassa\Schema" line="793" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Hey\Lacassa\Schema" line="793" package="Default">
         <name>typeTimestamp</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::typeTimestamp()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::typeTimestamp()</full_name>
         <docblock line="793">
           <description>Create the column definition for a timestamp type.</description>
           <long-description></long-description>
@@ -1401,9 +1401,9 @@
           <type>\Illuminate\Support\Fluent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ShSo\Lacassa\Schema" line="809" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Hey\Lacassa\Schema" line="809" package="Default">
         <name>typeTimestampTz</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::typeTimestampTz()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::typeTimestampTz()</full_name>
         <docblock line="809">
           <description>Create the column definition for a timestamp type.</description>
           <long-description></long-description>
@@ -1420,9 +1420,9 @@
           <type>\Illuminate\Support\Fluent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ShSo\Lacassa\Schema" line="825" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Hey\Lacassa\Schema" line="825" package="Default">
         <name>typeBinary</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::typeBinary()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::typeBinary()</full_name>
         <docblock line="825">
           <description>Create the column definition for a binary type.</description>
           <long-description></long-description>
@@ -1439,9 +1439,9 @@
           <type>\Illuminate\Support\Fluent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ShSo\Lacassa\Schema" line="837" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Hey\Lacassa\Schema" line="837" package="Default">
         <name>typeUuid</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::typeUuid()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::typeUuid()</full_name>
         <docblock line="837">
           <description>Create the column definition for a uuid type.</description>
           <long-description></long-description>
@@ -1458,9 +1458,9 @@
           <type>\Illuminate\Support\Fluent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ShSo\Lacassa\Schema" line="849" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Hey\Lacassa\Schema" line="849" package="Default">
         <name>typeIpAddress</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::typeIpAddress()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::typeIpAddress()</full_name>
         <docblock line="849">
           <description>Create the column definition for an IP address type.</description>
           <long-description></long-description>
@@ -1477,9 +1477,9 @@
           <type>\Illuminate\Support\Fluent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ShSo\Lacassa\Schema" line="861" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Hey\Lacassa\Schema" line="861" package="Default">
         <name>typeMacAddress</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::typeMacAddress()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::typeMacAddress()</full_name>
         <docblock line="861">
           <description>Create the column definition for a MAC address type.</description>
           <long-description></long-description>
@@ -1496,9 +1496,9 @@
           <type>\Illuminate\Support\Fluent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ShSo\Lacassa\Schema" line="874" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Hey\Lacassa\Schema" line="874" package="Default">
         <name>modifyVirtualAs</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::modifyVirtualAs()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::modifyVirtualAs()</full_name>
         <docblock line="874">
           <description>Get the SQL for a generated virtual column modifier.</description>
           <long-description></long-description>
@@ -1524,9 +1524,9 @@
           <type>\Illuminate\Support\Fluent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ShSo\Lacassa\Schema" line="889" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Hey\Lacassa\Schema" line="889" package="Default">
         <name>modifyStoredAs</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::modifyStoredAs()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::modifyStoredAs()</full_name>
         <docblock line="889">
           <description>Get the SQL for a generated stored column modifier.</description>
           <long-description></long-description>
@@ -1552,9 +1552,9 @@
           <type>\Illuminate\Support\Fluent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ShSo\Lacassa\Schema" line="904" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Hey\Lacassa\Schema" line="904" package="Default">
         <name>modifyUnsigned</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::modifyUnsigned()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::modifyUnsigned()</full_name>
         <docblock line="904">
           <description>Get the SQL for an unsigned column modifier.</description>
           <long-description></long-description>
@@ -1580,9 +1580,9 @@
           <type>\Illuminate\Support\Fluent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ShSo\Lacassa\Schema" line="919" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Hey\Lacassa\Schema" line="919" package="Default">
         <name>modifyCharset</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::modifyCharset()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::modifyCharset()</full_name>
         <docblock line="919">
           <description>Get the SQL for a character set column modifier.</description>
           <long-description></long-description>
@@ -1608,9 +1608,9 @@
           <type>\Illuminate\Support\Fluent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ShSo\Lacassa\Schema" line="934" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Hey\Lacassa\Schema" line="934" package="Default">
         <name>modifyCollate</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::modifyCollate()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::modifyCollate()</full_name>
         <docblock line="934">
           <description>Get the SQL for a collation column modifier.</description>
           <long-description></long-description>
@@ -1636,9 +1636,9 @@
           <type>\Illuminate\Support\Fluent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ShSo\Lacassa\Schema" line="949" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Hey\Lacassa\Schema" line="949" package="Default">
         <name>modifyNullable</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::modifyNullable()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::modifyNullable()</full_name>
         <docblock line="949">
           <description>Get the SQL for a nullable column modifier.</description>
           <long-description></long-description>
@@ -1664,9 +1664,9 @@
           <type>\Illuminate\Support\Fluent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ShSo\Lacassa\Schema" line="964" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Hey\Lacassa\Schema" line="964" package="Default">
         <name>modifyDefault</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::modifyDefault()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::modifyDefault()</full_name>
         <docblock line="964">
           <description>Get the SQL for a default column modifier.</description>
           <long-description></long-description>
@@ -1692,9 +1692,9 @@
           <type>\Illuminate\Support\Fluent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ShSo\Lacassa\Schema" line="979" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Hey\Lacassa\Schema" line="979" package="Default">
         <name>modifyIncrement</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::modifyIncrement()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::modifyIncrement()</full_name>
         <docblock line="979">
           <description>Get the SQL for an auto-increment column modifier.</description>
           <long-description></long-description>
@@ -1720,9 +1720,9 @@
           <type>\Illuminate\Support\Fluent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ShSo\Lacassa\Schema" line="994" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Hey\Lacassa\Schema" line="994" package="Default">
         <name>modifyFirst</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::modifyFirst()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::modifyFirst()</full_name>
         <docblock line="994">
           <description>Get the SQL for a "first" column modifier.</description>
           <long-description></long-description>
@@ -1748,9 +1748,9 @@
           <type>\Illuminate\Support\Fluent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ShSo\Lacassa\Schema" line="1009" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Hey\Lacassa\Schema" line="1009" package="Default">
         <name>modifyAfter</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::modifyAfter()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::modifyAfter()</full_name>
         <docblock line="1009">
           <description>Get the SQL for an "after" column modifier.</description>
           <long-description></long-description>
@@ -1776,9 +1776,9 @@
           <type>\Illuminate\Support\Fluent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ShSo\Lacassa\Schema" line="1024" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Hey\Lacassa\Schema" line="1024" package="Default">
         <name>modifyComment</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::modifyComment()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::modifyComment()</full_name>
         <docblock line="1024">
           <description>Get the SQL for a "comment" column modifier.</description>
           <long-description></long-description>
@@ -1804,9 +1804,9 @@
           <type>\Illuminate\Support\Fluent</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ShSo\Lacassa\Schema" line="1038" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Hey\Lacassa\Schema" line="1038" package="Default">
         <name>wrapValue</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::wrapValue()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::wrapValue()</full_name>
         <docblock line="1038">
           <description>Wrap a single string in keyword identifiers.</description>
           <long-description></long-description>
@@ -1823,9 +1823,9 @@
           <type>string</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ShSo\Lacassa\Schema" line="1054" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Hey\Lacassa\Schema" line="1054" package="Default">
         <name>getColumns</name>
-        <full_name>\ShSo\Lacassa\Schema\Grammar::getColumns()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Grammar::getColumns()</full_name>
         <docblock line="1054">
           <description>Compile the blueprint's column definitions.</description>
           <long-description></long-description>
@@ -1845,7 +1845,7 @@
     </class>
     <parse_markers>
       <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
-      <error line="11" code="PPC:ERR-50005">No summary for class \ShSo\Lacassa\Schema\Grammar</error>
+      <error line="11" code="PPC:ERR-50005">No summary for class \Hey\Lacassa\Schema\Grammar</error>
     </parse_markers>
     <source>eJztXW1z27gR/u5fgdM4RynjKJdrO52pz0kdR07dxLk0cnLTOWd8kAhJ6FGkjiDtOK7/e3cX4JskSpCohIqm+RBTJLDYfXYXWIDA8qdnk9Fkb8/nY6EmvC9Yd9QNLl/zPleKX3b7IzHmh3t7sZp6chL4vuhHMvAP6eGZ58Vj6fNIXHbjySQIo8tTLxZ+dDhbV1O9fA7PJ6H0I8YVS3/MkHvBI97jSsyvBg/sq74M+XjMQ5VcJBTMT5Cz7wGHLHksPkXCdwtl9u72GPx7/PAh/WUP2cVIsEmglOx5gvUDaNxn48CVAylC1TalksJ/v8ZWw5DfmjuP6e8kDCJAU7hsP63KjtivuhBjzgcZRjH3jpVzwJxuFITC1dfvfSWHvnDx+mQEsomILgPPAwTw8k0Ml8Cbc5BSeyEGPPao4JnfD8UY9KRrjZPL40EkQrw4laGKdN2PAJCF8EqEkntriG4qouBOTw7P/EgMNRMyuxwLV8bj3DM15p6X+x1J/zb5OYdjkHEigdkIOP8jFuEtiwLmCpAWjEbf9qSKWDBgEcI2K0coojgEMSOwuWFRlrjnyT4bxD55BgBCbV0gnc4noKqaLSp4l6iCGWKOEh6gAOQHYTBm0h8E4ZgjkStFttvWzLCbkQiF5sw8AbieMe675iZ6Mt5yDqmN+yoAaIVuAIETIvQayEKFZRjoVrUgZWgYzjYIB2fgCOAyuh4yPgYqM6JPOPQD7NKqf9rvJZcLqhd7S7ZvGrZpMOuDsVpyXV1ZhENznhwHbIrNAzafiWkV76s/PFDDfjSS6tHTQkPkHc20JBbOtZc1NCMiYy3j3qTSx+wU8PG82wN2I9iN9DzGJxOBlgAmLfwhWjfQGMhhHJIxscAH00eWWPdfrwEh4Ab7PxgW8mSx+gBJY1F/iNTdgPUEGKUwtou3iQ6Uk2oEnRkQbLOf/b7Q94ciKtDkrivcnAsSuz0kx11ySPFJ9GOwRj7k0gdvxKLw0GMZColfZh40D94OCV7EF5RRwPNgxlQJ2xKHMW4CDI2Btym38TiMwbvtNemANd9xtD0vteGSTlBRnUHTeaAMpHDRfKAO4G8rG8Lxn6ORL940JnAT8sk0I61CQTmeeIErmjhkHiTVwEx1V63y9VrzWjAyvw0lREW3c+VtLbWl48xB+xC8cIA1hPghAhhEH8KgPvmpQofgS7pkrSmy7cpWUNFgN2BEHb8PcSCMldpX53N7wOYxMW1Y1DFCDJf2iojvLOJyAN2hYCMIiXtC+HQPmhMSioa6PHGWp5u2yWQEgzdQCLEO9VVBEE31ttBfajqZMNGIEy+F7pasXiIbqFDdqgt02+yXpF93yWYg2Kf+WxT7IOpRs74RBGtKBeLkbBTMV8fKrVYOKbJuHKjaR8yBkIiC5CmYnPYcKocpiXsmPCWwye+kuvIh9G7um0I4/GWiG19DfJqOKeG01mFnlofCoPgGJjHZgOgaZ6PpAWlgDoDZQDhlFHNGsCCzEFBZgUxmHZniZ8xBFobFOaZhBkiJ3WEImIFNoCE4RhoZsfwYbqf7RPoFcOsyYlrfSc0lGk/hXaDzpMxCrefYmNd2pukkAoCaFp2tiYb+38tSbFS9j51vZxrlGe3mVNV2ElUcTVmavr3YzNKqZTamC8wxsHIWZtpdycTSyZRPzmkWBLZkLrX+jOjYde2mQzPTnmSemk59JqEYyE/HuAzSdACjpbHX4YwCHO5h9687WVDZgogPlOu0pyI9w1J5fJ9OiCc6tmO/i9tvX4dJoLqWHhPTLwwFBbJz9FQMlF+J+UEyKCWHs2OhltiXMMzthlbekyzVlGILs8bNBuGJhxNb6bvi027AfIaifB2UCTULkBN8KWQ0rG4DyNORTnQ7EZuIOBAyyyU1anPZ+kB+EHigaLiFPw/UA9WcWSmwXhSglsuqNhMOHz0l1U1VTR9ybxiEMCkYs2cQwcYKYaT4deb535gzl1E9RMnPItdkMmwtXVPI3NgNg8l2Leeu78EvQJZKDuzk0FgcNKwEbBNCUkGvNlq7AfLZwLyp2RTYKUCbgX1XYmrEWse7XyS0Rqyy2BoB1w9mO5Q6I2zS6E6F2ajWTYTaq6lgGkeLt31UZZdCaUS+Sji9r+Oxo4VD/qyvNPKKulukp3uNuW7mTjd337DUlAkWd0FJFYLx7dYRvhCVQ3933OlUC7TdusqjvoLGQkFbI3YkPH5H0qypKNpkcrRwljRHTwUA74jIPS6hN+YMVqnWo2BpVKDflFB5er3iUwNF3/IBGQ58bWBrTofoG0uHSepJRrx0o063c8FOf37XOXv55upV599XJ//onLzqHj05tNp0lBPOlerLSvdCN7AR8X5YIF62J8LE567ArSDpiy5O7+0YTq8tnGzWS5DmCmDMrkJgy7g/sFmkWQJBA7lt3plCj556wh9Go/tWeb+yHACzoFIvBF0qaQnCNQ+/AA4RvpCtF4ULYMEOAwe5rWL2WyDtczkEd7eUt0eFq0jc84Je3RIDC7byQtFK3VoQ+xSv1NuzaS4sZTY8VxEbRvvPwq9Z6lNiwlJozXEVmaUv6nblM2DBUl7ktpq09QtrL2slUWm7d72y4tZwS2GR25/0fhgak3FfjN77cIEiOE+rQDHmk5qROIdZoh0QwGs5Dk/auBhZ9vTHijCp2nuCrnVHALx+MXOJ5FjEsXTrjucMG7YxnSleSfJ4gtO5esVGHmxlxrJ5O6AbT0iAoqfQgx/LHvwpqm41Zl5RM3ofzOzGDj/Dc0Wx6x9UPxAT9kJXHFr1abVtmAWdEycrzPw061Xnf16Ac/76xX8NfKwgPLJdVXSYSjJzcLHu+WB6mPJrzYL9LZF8NbE34+zbIfl5/pzsSi5fEQU8f7slGFxkR4GtQyP/tqL8dB55SwDo5s5G24bLWKUiBAMv4HV3+KfIg53M5n0N1noRxOaFDZWvgIFLlGoGwYhjp3nNcRW9u6Ivx3hOtl6hNRe2UuvSlQb6IPAEr3s18LnmwnaE16W/fbGPVV9KS6E5lq0U1Qgfo/laBe4AC5YvsJDbptNI96c1cELbSHeo4VZcL7gRbqvdcCq90/qPCuq2g38CC5ZmgNxWMXysX/crHhTX9h1PVXldKlBvn44ZKSw7dDwTX1HaR7hEtgUi48LeCmIj17sk+sXnryj8Fsi9grp3RFprDW9CXhXxcd2vdy4SPpbIjSd902E6VuIkDkMoXnKQ18nES/IEnLx/967z5uLq4uy80704Pn/rLDrUmxHYKZCXmtc3CXMPwMO0XTWvKSITX2mXyRa8Y3tv/36t4rs1n529xfN8oVCq7uXTybHmY7W3RM0//6VVRd3nxydbAsA576+HwJO/liPw0iTgwYQlWuCh8EXIsfVrnehxOpFkHTuzlwL4X0xDsQxFkuA2zV+5dIt2WS9dyK5C3fV1QrMsvUUD83vmdm+mFdINnFo/q2tJUQbOXVNSkld0gzpShqStipLy9y2D8TqK8llssqLumoaSbK9rayiLdQylskgnhdBZx1OKSap2TAkmze4GvaQsGVmqjNmkX8Waa+koTVK1a/rRObM2qZ/ShGGZhgqJuoq11tGOb7I275pykmzUa2tnQRjAvv+erTwCpQVTxDFrBf5wMD8F84NI/1pHi2nSvt1SoskfvkEPM0CV+1eCZHoUfCgiw8YHDg3OklorcOBxFDySSU70XdNbmux9fe/zr3iSR0HDTRljklfoJoM7eWL2kgkwTVsuVTCWusqQnz3Mv5rnNQaY87SxaxqkTK4b9DtCqdzr6PE6+OM5ZvyCwM4pgL6LsEEFEErlCqDHxfwX03XX8o6+/tLDzqnHfMFio7EfUSyfwJoCzGm0pyu1G47F/PUXUCruGwNJKfkuHZOVdBj6JghdJl0gVfI5kWKusmscCRdCuQxFNDAznhKxuXNIesK+OzpizkOnBBdo7ioUE4/3RdP5Dfcd/Ib/G6qL1sh1EZuD5KlmHTW7lFiG1YayzS76kEmKZi6lZ+FDNQsyyRoToo+gfMxlHcAT8rw/YoUEs0D/GNMwJ420cDUlse4pvTx+zDpIAL9rki294uit2IhfE6IyZMFNenY+TAXB72xIqMvpWxvqd+FOk76R0YghMPpLCPOWdiV+bEFGKumGxjxKc0BjxsUI703TjRXg2budyhvepu/O6CZA99knc5BBw71LHwGhLNXtAtXipyjyPapO5pTFl3hAKLcVsEjF6OnXj0grTYlbYtKmcGLU93v/A2Wa8NA=</source>
   </file>
@@ -1858,39 +1858,39 @@
     <namespace-alias name="Connection">\Illuminate\Database\Connection</namespace-alias>
     <namespace-alias name="BaseBluprint">\Illuminate\Database\Schema\Blueprint</namespace-alias>
     <namespace-alias name="BaseGrammar">\Illuminate\Database\Schema\Grammars\Grammar</namespace-alias>
-    <class final="false" abstract="false" namespace="ShSo\Lacassa\Schema" line="9" package="Default">
+    <class final="false" abstract="false" namespace="Hey\Lacassa\Schema" line="9" package="Default">
       <extends>\Illuminate\Database\Schema\Blueprint</extends>
       <name>Blueprint</name>
-      <full_name>\ShSo\Lacassa\Schema\Blueprint</full_name>
+      <full_name>\Hey\Lacassa\Schema\Blueprint</full_name>
       <docblock line="9">
         <description></description>
         <long-description></long-description>
         <tag name="package" line="9" description="Default"/>
       </docblock>
-      <property static="false" visibility="protected" namespace="ShSo\Lacassa\Schema" line="16" package="Default">
+      <property static="false" visibility="protected" namespace="Hey\Lacassa\Schema" line="16" package="Default">
         <name>$connection</name>
-        <full_name>\ShSo\Lacassa\Schema\Blueprint::connection</full_name>
+        <full_name>\Hey\Lacassa\Schema\Blueprint::connection</full_name>
         <default></default>
         <docblock line="16">
           <description>The Cassandra object for this blueprint.</description>
           <long-description></long-description>
-          <tag name="var" line="16" description="" type="\ShSo\Lacassa\Schema\MongoConnection" variable="">
-            <type>\ShSo\Lacassa\Schema\MongoConnection</type>
+          <tag name="var" line="16" description="" type="\Hey\Lacassa\Schema\MongoConnection" variable="">
+            <type>\Hey\Lacassa\Schema\MongoConnection</type>
           </tag>
         </docblock>
       </property>
-      <property static="false" visibility="protected" namespace="ShSo\Lacassa\Schema" line="18" package="Default">
+      <property static="false" visibility="protected" namespace="Hey\Lacassa\Schema" line="18" package="Default">
         <name>$primary</name>
-        <full_name>\ShSo\Lacassa\Schema\Blueprint::primary</full_name>
+        <full_name>\Hey\Lacassa\Schema\Blueprint::primary</full_name>
         <default></default>
         <docblock line="18">
           <description></description>
           <long-description></long-description>
         </docblock>
       </property>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa\Schema" line="23" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa\Schema" line="23" package="Default">
         <name>__construct</name>
-        <full_name>\ShSo\Lacassa\Schema\Blueprint::__construct()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Blueprint::__construct()</full_name>
         <docblock line="23">
           <description></description>
           <long-description></long-description>
@@ -1909,9 +1909,9 @@
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa\Schema" line="34" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa\Schema" line="34" package="Default">
         <name>getAddedColumns</name>
-        <full_name>\ShSo\Lacassa\Schema\Blueprint::getAddedColumns()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Blueprint::getAddedColumns()</full_name>
         <docblock line="34">
           <description>Get the columns on the blueprint that should be added.</description>
           <long-description></long-description>
@@ -1920,9 +1920,9 @@
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa\Schema" line="51" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa\Schema" line="51" package="Default">
         <name>toSql</name>
-        <full_name>\ShSo\Lacassa\Schema\Blueprint::toSql()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Blueprint::toSql()</full_name>
         <docblock line="51">
           <description>Get the raw SQL statements for the blueprint.</description>
           <long-description></long-description>
@@ -1947,9 +1947,9 @@
           <type>\Illuminate\Database\Schema\Grammars\Grammar</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa\Schema" line="81" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa\Schema" line="81" package="Default">
         <name>primary</name>
-        <full_name>\ShSo\Lacassa\Schema\Blueprint::primary()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Blueprint::primary()</full_name>
         <docblock line="81">
           <description>Specify the primary key(s) for the table.</description>
           <long-description></long-description>
@@ -1984,9 +1984,9 @@
           <type>string|null</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa\Schema" line="93" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa\Schema" line="93" package="Default">
         <name>compilePrimary</name>
-        <full_name>\ShSo\Lacassa\Schema\Blueprint::compilePrimary()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Blueprint::compilePrimary()</full_name>
         <docblock line="93">
           <description></description>
           <long-description></long-description>
@@ -1995,9 +1995,9 @@
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa\Schema" line="110" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa\Schema" line="110" package="Default">
         <name>ascii</name>
-        <full_name>\ShSo\Lacassa\Schema\Blueprint::ascii()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Blueprint::ascii()</full_name>
         <docblock line="110">
           <description>Create a new ascii column on the table.</description>
           <long-description></long-description>
@@ -2014,9 +2014,9 @@
           <type>string</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa\Schema" line="122" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa\Schema" line="122" package="Default">
         <name>bigint</name>
-        <full_name>\ShSo\Lacassa\Schema\Blueprint::bigint()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Blueprint::bigint()</full_name>
         <docblock line="122">
           <description>Create a new bigint column on the table.</description>
           <long-description></long-description>
@@ -2033,9 +2033,9 @@
           <type>string</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa\Schema" line="134" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa\Schema" line="134" package="Default">
         <name>blob</name>
-        <full_name>\ShSo\Lacassa\Schema\Blueprint::blob()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Blueprint::blob()</full_name>
         <docblock line="134">
           <description>Create a new blob column on the table.</description>
           <long-description></long-description>
@@ -2052,9 +2052,9 @@
           <type>string</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa\Schema" line="146" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa\Schema" line="146" package="Default">
         <name>boolean</name>
-        <full_name>\ShSo\Lacassa\Schema\Blueprint::boolean()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Blueprint::boolean()</full_name>
         <docblock line="146">
           <description>Create a new boolean column on the table.</description>
           <long-description></long-description>
@@ -2071,9 +2071,9 @@
           <type>string</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa\Schema" line="158" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa\Schema" line="158" package="Default">
         <name>counter</name>
-        <full_name>\ShSo\Lacassa\Schema\Blueprint::counter()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Blueprint::counter()</full_name>
         <docblock line="158">
           <description>Create a new counter column on the table.</description>
           <long-description></long-description>
@@ -2090,9 +2090,9 @@
           <type>string</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa\Schema" line="170" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa\Schema" line="170" package="Default">
         <name>frozen</name>
-        <full_name>\ShSo\Lacassa\Schema\Blueprint::frozen()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Blueprint::frozen()</full_name>
         <docblock line="170">
           <description>Create a new frozen column on the table.</description>
           <long-description></long-description>
@@ -2109,9 +2109,9 @@
           <type>string</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa\Schema" line="182" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa\Schema" line="182" package="Default">
         <name>inet</name>
-        <full_name>\ShSo\Lacassa\Schema\Blueprint::inet()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Blueprint::inet()</full_name>
         <docblock line="182">
           <description>Create a new inet column on the table.</description>
           <long-description></long-description>
@@ -2128,9 +2128,9 @@
           <type>string</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa\Schema" line="194" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa\Schema" line="194" package="Default">
         <name>int</name>
-        <full_name>\ShSo\Lacassa\Schema\Blueprint::int()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Blueprint::int()</full_name>
         <docblock line="194">
           <description>Create a new int column on the table.</description>
           <long-description></long-description>
@@ -2147,9 +2147,9 @@
           <type>string</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa\Schema" line="207" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa\Schema" line="207" package="Default">
         <name>listCollection</name>
-        <full_name>\ShSo\Lacassa\Schema\Blueprint::listCollection()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Blueprint::listCollection()</full_name>
         <docblock line="207">
           <description>Create a new list column on the table.</description>
           <long-description></long-description>
@@ -2174,9 +2174,9 @@
           <type>string</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa\Schema" line="221" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa\Schema" line="221" package="Default">
         <name>mapCollection</name>
-        <full_name>\ShSo\Lacassa\Schema\Blueprint::mapCollection()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Blueprint::mapCollection()</full_name>
         <docblock line="221">
           <description>Create a new map column on the table.</description>
           <long-description></long-description>
@@ -2209,9 +2209,9 @@
           <type>string</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa\Schema" line="234" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa\Schema" line="234" package="Default">
         <name>setCollection</name>
-        <full_name>\ShSo\Lacassa\Schema\Blueprint::setCollection()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Blueprint::setCollection()</full_name>
         <docblock line="234">
           <description>Create a new set column on the table.</description>
           <long-description></long-description>
@@ -2236,9 +2236,9 @@
           <type>string</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa\Schema" line="246" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa\Schema" line="246" package="Default">
         <name>timestamp</name>
-        <full_name>\ShSo\Lacassa\Schema\Blueprint::timestamp()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Blueprint::timestamp()</full_name>
         <docblock line="246">
           <description>Create a new timestamp column on the table.</description>
           <long-description></long-description>
@@ -2255,9 +2255,9 @@
           <type>string</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa\Schema" line="258" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa\Schema" line="258" package="Default">
         <name>timeuuid</name>
-        <full_name>\ShSo\Lacassa\Schema\Blueprint::timeuuid()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Blueprint::timeuuid()</full_name>
         <docblock line="258">
           <description>Create a new timeuuid column on the table.</description>
           <long-description></long-description>
@@ -2274,9 +2274,9 @@
           <type>string</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa\Schema" line="273" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa\Schema" line="273" package="Default">
         <name>tuple</name>
-        <full_name>\ShSo\Lacassa\Schema\Blueprint::tuple()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Blueprint::tuple()</full_name>
         <docblock line="273">
           <description>Create a new tuple column on the table.</description>
           <long-description></long-description>
@@ -2317,9 +2317,9 @@
           <type>string</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa\Schema" line="285" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa\Schema" line="285" package="Default">
         <name>uuid</name>
-        <full_name>\ShSo\Lacassa\Schema\Blueprint::uuid()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Blueprint::uuid()</full_name>
         <docblock line="285">
           <description>Create a new uuid column on the table.</description>
           <long-description></long-description>
@@ -2336,9 +2336,9 @@
           <type>string</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa\Schema" line="297" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa\Schema" line="297" package="Default">
         <name>varchar</name>
-        <full_name>\ShSo\Lacassa\Schema\Blueprint::varchar()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Blueprint::varchar()</full_name>
         <docblock line="297">
           <description>Create a new varchar column on the table.</description>
           <long-description></long-description>
@@ -2355,9 +2355,9 @@
           <type>string</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa\Schema" line="309" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa\Schema" line="309" package="Default">
         <name>varint</name>
-        <full_name>\ShSo\Lacassa\Schema\Blueprint::varint()</full_name>
+        <full_name>\Hey\Lacassa\Schema\Blueprint::varint()</full_name>
         <docblock line="309">
           <description>Create a new varint column on the table.</description>
           <long-description></long-description>
@@ -2377,7 +2377,7 @@
     </class>
     <parse_markers>
       <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
-      <error line="9" code="PPC:ERR-50005">No summary for class \ShSo\Lacassa\Schema\Blueprint</error>
+      <error line="9" code="PPC:ERR-50005">No summary for class \Hey\Lacassa\Schema\Blueprint</error>
       <error line="23" code="PPC:ERR-50008">No summary for method __construct()</error>
       <error line="93" code="PPC:ERR-50008">No summary for method compilePrimary()</error>
       <error line="18" code="PPC:ERR-50007">No summary for property $primary</error>
@@ -2391,24 +2391,24 @@
       <tag name="package" line="0" description="Default"/>
     </docblock>
     <namespace-alias name="Cassandra">\Cassandra</namespace-alias>
-    <namespace-alias name="QueryBuilder">\ShSo\Lacassa\Query\Builder</namespace-alias>
-    <namespace-alias name="QueryGrammar">\ShSo\Lacassa\Query\Grammar</namespace-alias>
-    <namespace-alias name="SchemaBuilder">\ShSo\Lacassa\Schema\Builder</namespace-alias>
-    <namespace-alias name="SchemaGrammar">\ShSo\Lacassa\Schema\Grammar</namespace-alias>
-    <namespace-alias name="QueryProcessor">\ShSo\Lacassa\Query\Processor</namespace-alias>
+    <namespace-alias name="QueryBuilder">\Hey\Lacassa\Query\Builder</namespace-alias>
+    <namespace-alias name="QueryGrammar">\Hey\Lacassa\Query\Grammar</namespace-alias>
+    <namespace-alias name="SchemaBuilder">\Hey\Lacassa\Schema\Builder</namespace-alias>
+    <namespace-alias name="SchemaGrammar">\Hey\Lacassa\Schema\Grammar</namespace-alias>
+    <namespace-alias name="QueryProcessor">\Hey\Lacassa\Query\Processor</namespace-alias>
     <namespace-alias name="BaseConnection">\Illuminate\Database\Connection</namespace-alias>
-    <class final="false" abstract="false" namespace="ShSo\Lacassa" line="13" package="Default">
+    <class final="false" abstract="false" namespace="Hey\Lacassa" line="13" package="Default">
       <extends>\Illuminate\Database\Connection</extends>
       <name>Connection</name>
-      <full_name>\ShSo\Lacassa\Connection</full_name>
+      <full_name>\Hey\Lacassa\Connection</full_name>
       <docblock line="13">
         <description></description>
         <long-description></long-description>
         <tag name="package" line="13" description="Default"/>
       </docblock>
-      <property static="false" visibility="protected" namespace="ShSo\Lacassa" line="20" package="Default">
+      <property static="false" visibility="protected" namespace="Hey\Lacassa" line="20" package="Default">
         <name>$connection</name>
-        <full_name>\ShSo\Lacassa\Connection::connection</full_name>
+        <full_name>\Hey\Lacassa\Connection::connection</full_name>
         <default></default>
         <docblock line="20">
           <description>The Cassandra connection handler.</description>
@@ -2418,9 +2418,9 @@
           </tag>
         </docblock>
       </property>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa" line="27" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa" line="27" package="Default">
         <name>__construct</name>
-        <full_name>\ShSo\Lacassa\Connection::__construct()</full_name>
+        <full_name>\Hey\Lacassa\Connection::__construct()</full_name>
         <docblock line="27">
           <description>Create a new database connection instance.</description>
           <long-description></long-description>
@@ -2434,17 +2434,17 @@
           <type>array</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa" line="45" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa" line="45" package="Default">
         <name>table</name>
-        <full_name>\ShSo\Lacassa\Connection::table()</full_name>
+        <full_name>\Hey\Lacassa\Connection::table()</full_name>
         <docblock line="45">
           <description>Begin a fluent query against a database table.</description>
           <long-description></long-description>
           <tag name="param" line="45" description="" type="string" variable="$table">
             <type>string</type>
           </tag>
-          <tag name="return" line="45" description="" type="\ShSo\Lacassa\Query\Builder">
-            <type>\ShSo\Lacassa\Query\Builder</type>
+          <tag name="return" line="45" description="" type="\Hey\Lacassa\Query\Builder">
+            <type>\Hey\Lacassa\Query\Builder</type>
           </tag>
         </docblock>
         <argument line="0" by_reference="false">
@@ -2453,31 +2453,31 @@
           <type>string</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa" line="53" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa" line="53" package="Default">
         <name>getSchemaBuilder</name>
-        <full_name>\ShSo\Lacassa\Connection::getSchemaBuilder()</full_name>
+        <full_name>\Hey\Lacassa\Connection::getSchemaBuilder()</full_name>
         <docblock line="53">
           <description></description>
           <long-description></long-description>
-          <tag name="return" line="53" description="" type="\ShSo\Lacassa\Schema\Builder">
-            <type>\ShSo\Lacassa\Schema\Builder</type>
+          <tag name="return" line="53" description="" type="\Hey\Lacassa\Schema\Builder">
+            <type>\Hey\Lacassa\Schema\Builder</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa" line="63" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa" line="63" package="Default">
         <name>getSchemaGrammar</name>
-        <full_name>\ShSo\Lacassa\Connection::getSchemaGrammar()</full_name>
+        <full_name>\Hey\Lacassa\Connection::getSchemaGrammar()</full_name>
         <docblock line="63">
           <description>Returns the connection grammer.</description>
           <long-description></long-description>
-          <tag name="return" line="63" description="" type="\ShSo\Lacassa\Schema\Grammar">
-            <type>\ShSo\Lacassa\Schema\Grammar</type>
+          <tag name="return" line="63" description="" type="\Hey\Lacassa\Schema\Grammar">
+            <type>\Hey\Lacassa\Schema\Grammar</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa" line="73" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa" line="73" package="Default">
         <name>getConnection</name>
-        <full_name>\ShSo\Lacassa\Connection::getConnection()</full_name>
+        <full_name>\Hey\Lacassa\Connection::getConnection()</full_name>
         <docblock line="73">
           <description>return Cassandra object.</description>
           <long-description></long-description>
@@ -2486,9 +2486,9 @@
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ShSo\Lacassa" line="85" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Hey\Lacassa" line="85" package="Default">
         <name>createConnection</name>
-        <full_name>\ShSo\Lacassa\Connection::createConnection()</full_name>
+        <full_name>\Hey\Lacassa\Connection::createConnection()</full_name>
         <docblock line="85">
           <description>Create a new Cassandra connection.</description>
           <long-description></long-description>
@@ -2505,9 +2505,9 @@
           <type>array</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa" line="119" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa" line="119" package="Default">
         <name>disconnect</name>
-        <full_name>\ShSo\Lacassa\Connection::disconnect()</full_name>
+        <full_name>\Hey\Lacassa\Connection::disconnect()</full_name>
         <docblock line="119">
           <description></description>
           <long-description></long-description>
@@ -2516,9 +2516,9 @@
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa" line="128" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa" line="128" package="Default">
         <name>getDriverName</name>
-        <full_name>\ShSo\Lacassa\Connection::getDriverName()</full_name>
+        <full_name>\Hey\Lacassa\Connection::getDriverName()</full_name>
         <docblock line="128">
           <description></description>
           <long-description></long-description>
@@ -2527,53 +2527,53 @@
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ShSo\Lacassa" line="136" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Hey\Lacassa" line="136" package="Default">
         <name>getDefaultPostProcessor</name>
-        <full_name>\ShSo\Lacassa\Connection::getDefaultPostProcessor()</full_name>
+        <full_name>\Hey\Lacassa\Connection::getDefaultPostProcessor()</full_name>
         <docblock line="136">
           <description></description>
           <long-description></long-description>
-          <tag name="return" line="136" description="" type="\ShSo\Lacassa\Query\Processor">
-            <type>\ShSo\Lacassa\Query\Processor</type>
+          <tag name="return" line="136" description="" type="\Hey\Lacassa\Query\Processor">
+            <type>\Hey\Lacassa\Query\Processor</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ShSo\Lacassa" line="144" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Hey\Lacassa" line="144" package="Default">
         <name>getDefaultQueryBuilder</name>
-        <full_name>\ShSo\Lacassa\Connection::getDefaultQueryBuilder()</full_name>
+        <full_name>\Hey\Lacassa\Connection::getDefaultQueryBuilder()</full_name>
         <docblock line="144">
           <description></description>
           <long-description></long-description>
-          <tag name="return" line="144" description="" type="\ShSo\Lacassa\Query\Builder">
-            <type>\ShSo\Lacassa\Query\Builder</type>
+          <tag name="return" line="144" description="" type="\Hey\Lacassa\Query\Builder">
+            <type>\Hey\Lacassa\Query\Builder</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ShSo\Lacassa" line="152" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Hey\Lacassa" line="152" package="Default">
         <name>getDefaultQueryGrammar</name>
-        <full_name>\ShSo\Lacassa\Connection::getDefaultQueryGrammar()</full_name>
+        <full_name>\Hey\Lacassa\Connection::getDefaultQueryGrammar()</full_name>
         <docblock line="152">
           <description></description>
           <long-description></long-description>
-          <tag name="return" line="152" description="" type="\ShSo\Lacassa\Query\Grammar">
-            <type>\ShSo\Lacassa\Query\Grammar</type>
+          <tag name="return" line="152" description="" type="\Hey\Lacassa\Query\Grammar">
+            <type>\Hey\Lacassa\Query\Grammar</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ShSo\Lacassa" line="160" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Hey\Lacassa" line="160" package="Default">
         <name>getDefaultSchemaGrammar</name>
-        <full_name>\ShSo\Lacassa\Connection::getDefaultSchemaGrammar()</full_name>
+        <full_name>\Hey\Lacassa\Connection::getDefaultSchemaGrammar()</full_name>
         <docblock line="160">
           <description></description>
           <long-description></long-description>
-          <tag name="return" line="160" description="" type="\ShSo\Lacassa\Schema\Grammar">
-            <type>\ShSo\Lacassa\Schema\Grammar</type>
+          <tag name="return" line="160" description="" type="\Hey\Lacassa\Schema\Grammar">
+            <type>\Hey\Lacassa\Schema\Grammar</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa" line="165" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa" line="165" package="Default">
         <name>affectingStatement</name>
-        <full_name>\ShSo\Lacassa\Connection::affectingStatement()</full_name>
+        <full_name>\Hey\Lacassa\Connection::affectingStatement()</full_name>
         <docblock line="165">
           <description></description>
           <long-description></long-description>
@@ -2589,9 +2589,9 @@
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa" line="170" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa" line="170" package="Default">
         <name>statement</name>
-        <full_name>\ShSo\Lacassa\Connection::statement()</full_name>
+        <full_name>\Hey\Lacassa\Connection::statement()</full_name>
         <docblock line="170">
           <description></description>
           <long-description></long-description>
@@ -2607,9 +2607,9 @@
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ShSo\Lacassa" line="189" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Hey\Lacassa" line="189" package="Default">
         <name>reconnectIfMissingConnection</name>
-        <full_name>\ShSo\Lacassa\Connection::reconnectIfMissingConnection()</full_name>
+        <full_name>\Hey\Lacassa\Connection::reconnectIfMissingConnection()</full_name>
         <docblock line="189">
           <description>Reconnect to the database if a PDO connection is missing.</description>
           <long-description></long-description>
@@ -2618,9 +2618,9 @@
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa" line="204" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa" line="204" package="Default">
         <name>__call</name>
-        <full_name>\ShSo\Lacassa\Connection::__call()</full_name>
+        <full_name>\Hey\Lacassa\Connection::__call()</full_name>
         <docblock line="204">
           <description>Dynamically pass methods to the connection.</description>
           <long-description></long-description>
@@ -2648,7 +2648,7 @@
     </class>
     <parse_markers>
       <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
-      <error line="13" code="PPC:ERR-50005">No summary for class \ShSo\Lacassa\Connection</error>
+      <error line="13" code="PPC:ERR-50005">No summary for class \Hey\Lacassa\Connection</error>
       <error line="53" code="PPC:ERR-50008">No summary for method getSchemaBuilder()</error>
       <error line="119" code="PPC:ERR-50008">No summary for method disconnect()</error>
       <error line="128" code="PPC:ERR-50008">No summary for method getDriverName()</error>
@@ -2668,10 +2668,10 @@
       <tag name="package" line="0" description="Default"/>
     </docblock>
     <namespace-alias name="BaseProcessor">\Illuminate\Database\Query\Processors\Processor</namespace-alias>
-    <class final="false" abstract="false" namespace="ShSo\Lacassa\Query" line="7" package="Default">
+    <class final="false" abstract="false" namespace="Hey\Lacassa\Query" line="7" package="Default">
       <extends>\Illuminate\Database\Query\Processors\Processor</extends>
       <name>Processor</name>
-      <full_name>\ShSo\Lacassa\Query\Processor</full_name>
+      <full_name>\Hey\Lacassa\Query\Processor</full_name>
       <docblock line="7">
         <description></description>
         <long-description></long-description>
@@ -2680,7 +2680,7 @@
     </class>
     <parse_markers>
       <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
-      <error line="7" code="PPC:ERR-50005">No summary for class \ShSo\Lacassa\Query\Processor</error>
+      <error line="7" code="PPC:ERR-50005">No summary for class \Hey\Lacassa\Query\Processor</error>
     </parse_markers>
     <source>eJxdjEEKwjAURPf/FP8eCkJxU3ChdJvNGAcqpEnIT6Ai3t2A0IK74c3jHU95ziIRCy3DU6d5Su4CDzO4W2N5HUSaUccQ2vKMqHRnVNxh/P3uWpKnWSq2T4Xp0JUN9IoPPaq7wrUyPv48ectHvjLbNyY=</source>
   </file>
@@ -2692,21 +2692,21 @@
     </docblock>
     <namespace-alias name="Cassandra">\Cassandra</namespace-alias>
     <namespace-alias name="Arr">\Illuminate\Support\Arr</namespace-alias>
-    <namespace-alias name="Connection">\ShSo\Lacassa\Connection</namespace-alias>
+    <namespace-alias name="Connection">\Hey\Lacassa\Connection</namespace-alias>
     <namespace-alias name="InvalidArgumentException">\InvalidArgumentException</namespace-alias>
     <namespace-alias name="BaseBuilder">\Illuminate\Database\Query\Builder</namespace-alias>
-    <class final="false" abstract="false" namespace="ShSo\Lacassa\Query" line="11" package="Default">
+    <class final="false" abstract="false" namespace="Hey\Lacassa\Query" line="11" package="Default">
       <extends>\Illuminate\Database\Query\Builder</extends>
       <name>Builder</name>
-      <full_name>\ShSo\Lacassa\Query\Builder</full_name>
+      <full_name>\Hey\Lacassa\Query\Builder</full_name>
       <docblock line="11">
         <description></description>
         <long-description></long-description>
         <tag name="package" line="11" description="Default"/>
       </docblock>
-      <property static="false" visibility="public" namespace="ShSo\Lacassa\Query" line="18" package="Default">
+      <property static="false" visibility="public" namespace="Hey\Lacassa\Query" line="18" package="Default">
         <name>$bindings</name>
-        <full_name>\ShSo\Lacassa\Query\Builder::bindings</full_name>
+        <full_name>\Hey\Lacassa\Query\Builder::bindings</full_name>
         <default>array('select' =&gt; array(), 'where' =&gt; array(), 'updateCollection' =&gt; array(), 'insertCollection' =&gt; array())</default>
         <docblock line="18">
           <description>The current query value bindings.</description>
@@ -2716,27 +2716,27 @@
           </tag>
         </docblock>
       </property>
-      <property static="false" visibility="public" namespace="ShSo\Lacassa\Query" line="25" package="Default">
+      <property static="false" visibility="public" namespace="Hey\Lacassa\Query" line="25" package="Default">
         <name>$allowFiltering</name>
-        <full_name>\ShSo\Lacassa\Query\Builder::allowFiltering</full_name>
+        <full_name>\Hey\Lacassa\Query\Builder::allowFiltering</full_name>
         <default>false</default>
         <docblock line="25">
           <description></description>
           <long-description></long-description>
         </docblock>
       </property>
-      <property static="false" visibility="public" namespace="ShSo\Lacassa\Query" line="27" package="Default">
+      <property static="false" visibility="public" namespace="Hey\Lacassa\Query" line="27" package="Default">
         <name>$distinct</name>
-        <full_name>\ShSo\Lacassa\Query\Builder::distinct</full_name>
+        <full_name>\Hey\Lacassa\Query\Builder::distinct</full_name>
         <default>false</default>
         <docblock line="27">
           <description></description>
           <long-description></long-description>
         </docblock>
       </property>
-      <property static="false" visibility="public" namespace="ShSo\Lacassa\Query" line="34" package="Default">
+      <property static="false" visibility="public" namespace="Hey\Lacassa\Query" line="34" package="Default">
         <name>$updateCollections</name>
-        <full_name>\ShSo\Lacassa\Query\Builder::updateCollections</full_name>
+        <full_name>\Hey\Lacassa\Query\Builder::updateCollections</full_name>
         <default></default>
         <docblock line="34">
           <description>The where constraints for the query.</description>
@@ -2746,9 +2746,9 @@
           </tag>
         </docblock>
       </property>
-      <property static="false" visibility="public" namespace="ShSo\Lacassa\Query" line="41" package="Default">
+      <property static="false" visibility="public" namespace="Hey\Lacassa\Query" line="41" package="Default">
         <name>$insertCollections</name>
-        <full_name>\ShSo\Lacassa\Query\Builder::insertCollections</full_name>
+        <full_name>\Hey\Lacassa\Query\Builder::insertCollections</full_name>
         <default></default>
         <docblock line="41">
           <description>The where constraints for the query.</description>
@@ -2758,9 +2758,9 @@
           </tag>
         </docblock>
       </property>
-      <property static="false" visibility="public" namespace="ShSo\Lacassa\Query" line="48" package="Default">
+      <property static="false" visibility="public" namespace="Hey\Lacassa\Query" line="48" package="Default">
         <name>$operators</name>
-        <full_name>\ShSo\Lacassa\Query\Builder::operators</full_name>
+        <full_name>\Hey\Lacassa\Query\Builder::operators</full_name>
         <default>array('=', '&lt;', '&gt;', '&lt;=', '&gt;=', 'like', 'contains', 'contains key')</default>
         <docblock line="48">
           <description>All of the available clause operators.</description>
@@ -2770,9 +2770,9 @@
           </tag>
         </docblock>
       </property>
-      <property static="false" visibility="protected" namespace="ShSo\Lacassa\Query" line="64" package="Default">
+      <property static="false" visibility="protected" namespace="Hey\Lacassa\Query" line="64" package="Default">
         <name>$conversion</name>
-        <full_name>\ShSo\Lacassa\Query\Builder::conversion</full_name>
+        <full_name>\Hey\Lacassa\Query\Builder::conversion</full_name>
         <default>array('=' =&gt; '$eq', '!=' =&gt; '$ne', '&lt;&gt;' =&gt; '$ne', '&lt;' =&gt; '$lt', '&lt;=' =&gt; '$lte', '&gt;' =&gt; '$gt', '&gt;=' =&gt; '$gte')</default>
         <docblock line="64">
           <description>Operator conversion.</description>
@@ -2782,9 +2782,9 @@
           </tag>
         </docblock>
       </property>
-      <property static="false" visibility="public" namespace="ShSo\Lacassa\Query" line="77" package="Default">
+      <property static="false" visibility="public" namespace="Hey\Lacassa\Query" line="77" package="Default">
         <name>$collectionTypes</name>
-        <full_name>\ShSo\Lacassa\Query\Builder::collectionTypes</full_name>
+        <full_name>\Hey\Lacassa\Query\Builder::collectionTypes</full_name>
         <default>array('set', 'list', 'map')</default>
         <docblock line="77">
           <description></description>
@@ -2794,41 +2794,41 @@
           </tag>
         </docblock>
       </property>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa\Query" line="82" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa\Query" line="82" package="Default">
         <name>__construct</name>
-        <full_name>\ShSo\Lacassa\Query\Builder::__construct()</full_name>
+        <full_name>\Hey\Lacassa\Query\Builder::__construct()</full_name>
         <docblock line="82">
           <description></description>
           <long-description></long-description>
-          <tag name="param" line="82" description="" type="\ShSo\Lacassa\Connection" variable="$connection">
-            <type>\ShSo\Lacassa\Connection</type>
+          <tag name="param" line="82" description="" type="\Hey\Lacassa\Connection" variable="$connection">
+            <type>\Hey\Lacassa\Connection</type>
           </tag>
         </docblock>
         <argument line="0" by_reference="false">
           <name>$connection</name>
           <default></default>
-          <type>\ShSo\Lacassa\Connection</type>
+          <type>\Hey\Lacassa\Connection</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa\Query" line="88" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa\Query" line="88" package="Default">
         <name>distinct</name>
-        <full_name>\ShSo\Lacassa\Query\Builder::distinct()</full_name>
+        <full_name>\Hey\Lacassa\Query\Builder::distinct()</full_name>
         <docblock line="88">
           <description></description>
           <long-description></long-description>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa\Query" line="95" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa\Query" line="95" package="Default">
         <name>allowFiltering</name>
-        <full_name>\ShSo\Lacassa\Query\Builder::allowFiltering()</full_name>
+        <full_name>\Hey\Lacassa\Query\Builder::allowFiltering()</full_name>
         <docblock line="95">
           <description></description>
           <long-description></long-description>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa\Query" line="109" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa\Query" line="109" package="Default">
         <name>get</name>
-        <full_name>\ShSo\Lacassa\Query\Builder::get()</full_name>
+        <full_name>\Hey\Lacassa\Query\Builder::get()</full_name>
         <docblock line="109">
           <description>Execute the query as a "select" statement.</description>
           <long-description></long-description>
@@ -2845,9 +2845,9 @@
           <type>array</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa\Query" line="126" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa\Query" line="126" package="Default">
         <name>getAsync</name>
-        <full_name>\ShSo\Lacassa\Query\Builder::getAsync()</full_name>
+        <full_name>\Hey\Lacassa\Query\Builder::getAsync()</full_name>
         <docblock line="126">
           <description>Execute the query as a "select" statement.</description>
           <long-description></long-description>
@@ -2864,9 +2864,9 @@
           <type>array</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="private" namespace="ShSo\Lacassa\Query" line="143" package="Default">
+      <method final="false" abstract="false" static="false" visibility="private" namespace="Hey\Lacassa\Query" line="143" package="Default">
         <name>execute</name>
-        <full_name>\ShSo\Lacassa\Query\Builder::execute()</full_name>
+        <full_name>\Hey\Lacassa\Query\Builder::execute()</full_name>
         <docblock line="143">
           <description>Execute the CQL query.</description>
           <long-description></long-description>
@@ -2883,9 +2883,9 @@
           <type>string</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="private" namespace="ShSo\Lacassa\Query" line="155" package="Default">
+      <method final="false" abstract="false" static="false" visibility="private" namespace="Hey\Lacassa\Query" line="155" package="Default">
         <name>executeAsync</name>
-        <full_name>\ShSo\Lacassa\Query\Builder::executeAsync()</full_name>
+        <full_name>\Hey\Lacassa\Query\Builder::executeAsync()</full_name>
         <docblock line="155">
           <description>Execute the CQL query asyncronously.</description>
           <long-description></long-description>
@@ -2902,9 +2902,9 @@
           <type>string</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa\Query" line="165" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa\Query" line="165" package="Default">
         <name>deleteRow</name>
-        <full_name>\ShSo\Lacassa\Query\Builder::deleteRow()</full_name>
+        <full_name>\Hey\Lacassa\Query\Builder::deleteRow()</full_name>
         <docblock line="165">
           <description>Delete a record from the database.</description>
           <long-description></long-description>
@@ -2913,9 +2913,9 @@
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa\Query" line="179" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa\Query" line="179" package="Default">
         <name>deleteColumn</name>
-        <full_name>\ShSo\Lacassa\Query\Builder::deleteColumn()</full_name>
+        <full_name>\Hey\Lacassa\Query\Builder::deleteColumn()</full_name>
         <docblock line="179">
           <description>Delete a column from the database.</description>
           <long-description></long-description>
@@ -2932,9 +2932,9 @@
           <type>array</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa\Query" line="194" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa\Query" line="194" package="Default">
         <name>count</name>
-        <full_name>\ShSo\Lacassa\Query\Builder::count()</full_name>
+        <full_name>\Hey\Lacassa\Query\Builder::count()</full_name>
         <docblock line="194">
           <description>Retrieve the "count" result of the query.</description>
           <long-description></long-description>
@@ -2951,9 +2951,9 @@
           <type>string</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa\Query" line="219" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa\Query" line="219" package="Default">
         <name>updateCollection</name>
-        <full_name>\ShSo\Lacassa\Query\Builder::updateCollection()</full_name>
+        <full_name>\Hey\Lacassa\Query\Builder::updateCollection()</full_name>
         <docblock line="219">
           <description>Used to update the colletions like set, list and map.</description>
           <long-description></long-description>
@@ -2994,9 +2994,9 @@
           <type>string</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa\Query" line="251" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa\Query" line="251" package="Default">
         <name>addCollectionBinding</name>
-        <full_name>\ShSo\Lacassa\Query\Builder::addCollectionBinding()</full_name>
+        <full_name>\Hey\Lacassa\Query\Builder::addCollectionBinding()</full_name>
         <docblock line="251">
           <description>Add a binding to the query.</description>
           <long-description></long-description>
@@ -3006,8 +3006,8 @@
           <tag name="param" line="251" description="" type="string" variable="$type">
             <type>string</type>
           </tag>
-          <tag name="return" line="251" description="" type="\ShSo\Lacassa\Query\Builder">
-            <type>\ShSo\Lacassa\Query\Builder</type>
+          <tag name="return" line="251" description="" type="\Hey\Lacassa\Query\Builder">
+            <type>\Hey\Lacassa\Query\Builder</type>
           </tag>
           <tag name="throws" line="251" description="" type="\InvalidArgumentException">
             <type>\InvalidArgumentException</type>
@@ -3025,9 +3025,9 @@
           <type>string</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa\Query" line="268" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa\Query" line="268" package="Default">
         <name>update</name>
-        <full_name>\ShSo\Lacassa\Query\Builder::update()</full_name>
+        <full_name>\Hey\Lacassa\Query\Builder::update()</full_name>
         <docblock line="268">
           <description>Update a record in the database.</description>
           <long-description></long-description>
@@ -3044,9 +3044,9 @@
           <type>array</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa\Query" line="284" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa\Query" line="284" package="Default">
         <name>insert</name>
-        <full_name>\ShSo\Lacassa\Query\Builder::insert()</full_name>
+        <full_name>\Hey\Lacassa\Query\Builder::insert()</full_name>
         <docblock line="284">
           <description>Insert a new record into the database.</description>
           <long-description></long-description>
@@ -3063,9 +3063,9 @@
           <type>array</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa\Query" line="324" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa\Query" line="324" package="Default">
         <name>insertCollection</name>
-        <full_name>\ShSo\Lacassa\Query\Builder::insertCollection()</full_name>
+        <full_name>\Hey\Lacassa\Query\Builder::insertCollection()</full_name>
         <docblock line="324">
           <description>Insert a colletion type in cassandra.</description>
           <long-description></long-description>
@@ -3078,8 +3078,8 @@
           <tag name="param" line="324" description="" type="string" variable="$value">
             <type>string</type>
           </tag>
-          <tag name="return" line="324" description="" type="\ShSo\Lacassa\Query\Builder">
-            <type>\ShSo\Lacassa\Query\Builder</type>
+          <tag name="return" line="324" description="" type="\Hey\Lacassa\Query\Builder">
+            <type>\Hey\Lacassa\Query\Builder</type>
           </tag>
           <tag name="fluent" description="This method is part of a fluent interface and will return the same instance"/>
         </docblock>
@@ -3099,9 +3099,9 @@
           <type>string</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa\Query" line="338" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa\Query" line="338" package="Default">
         <name>index</name>
-        <full_name>\ShSo\Lacassa\Query\Builder::index()</full_name>
+        <full_name>\Hey\Lacassa\Query\Builder::index()</full_name>
         <docblock line="338">
           <description></description>
           <long-description></long-description>
@@ -3121,7 +3121,7 @@
     </class>
     <parse_markers>
       <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
-      <error line="11" code="PPC:ERR-50005">No summary for class \ShSo\Lacassa\Query\Builder</error>
+      <error line="11" code="PPC:ERR-50005">No summary for class \Hey\Lacassa\Query\Builder</error>
       <error line="82" code="PPC:ERR-50008">No summary for method __construct()</error>
       <error line="88" code="PPC:ERR-50008">No summary for method distinct()</error>
       <error line="95" code="PPC:ERR-50008">No summary for method allowFiltering()</error>
@@ -3140,32 +3140,32 @@
     </docblock>
     <namespace-alias name="BaseBuilder">\Illuminate\Database\Query\Builder</namespace-alias>
     <namespace-alias name="BaseGrammar">\Illuminate\Database\Query\Grammars\Grammar</namespace-alias>
-    <class final="false" abstract="false" namespace="ShSo\Lacassa\Query" line="8" package="Default">
+    <class final="false" abstract="false" namespace="Hey\Lacassa\Query" line="8" package="Default">
       <extends>\Illuminate\Database\Query\Grammars\Grammar</extends>
       <name>Grammar</name>
-      <full_name>\ShSo\Lacassa\Query\Grammar</full_name>
+      <full_name>\Hey\Lacassa\Query\Grammar</full_name>
       <docblock line="8">
         <description></description>
         <long-description></long-description>
         <tag name="package" line="8" description="Default"/>
       </docblock>
-      <property static="false" visibility="protected" namespace="ShSo\Lacassa\Query" line="10" package="Default">
+      <property static="false" visibility="protected" namespace="Hey\Lacassa\Query" line="10" package="Default">
         <name>$selectComponents</name>
-        <full_name>\ShSo\Lacassa\Query\Grammar::selectComponents</full_name>
+        <full_name>\Hey\Lacassa\Query\Grammar::selectComponents</full_name>
         <default>array('columns', 'from', 'wheres', 'limit', 'allowFiltering')</default>
         <docblock line="10">
           <description></description>
           <long-description></long-description>
         </docblock>
       </property>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa\Query" line="26" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa\Query" line="26" package="Default">
         <name>compileInsert</name>
-        <full_name>\ShSo\Lacassa\Query\Grammar::compileInsert()</full_name>
+        <full_name>\Hey\Lacassa\Query\Grammar::compileInsert()</full_name>
         <docblock line="26">
           <description>Compile an insert statement into CQL.</description>
           <long-description></long-description>
-          <tag name="param" line="26" description="" type="\ShSo\Lacassa\Query" variable="$query">
-            <type>\ShSo\Lacassa\Query</type>
+          <tag name="param" line="26" description="" type="\Hey\Lacassa\Query" variable="$query">
+            <type>\Hey\Lacassa\Query</type>
           </tag>
           <tag name="param" line="26" description="" type="array" variable="$values">
             <type>array</type>
@@ -3177,7 +3177,7 @@
         <argument line="0" by_reference="false">
           <name>$query</name>
           <default></default>
-          <type>\ShSo\Lacassa\Query</type>
+          <type>\Hey\Lacassa\Query</type>
         </argument>
         <argument line="0" by_reference="false">
           <name>$values</name>
@@ -3185,9 +3185,9 @@
           <type>array</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa\Query" line="50" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa\Query" line="50" package="Default">
         <name>buildInsertCollectionParam</name>
-        <full_name>\ShSo\Lacassa\Query\Grammar::buildInsertCollectionParam()</full_name>
+        <full_name>\Hey\Lacassa\Query\Grammar::buildInsertCollectionParam()</full_name>
         <docblock line="50">
           <description></description>
           <long-description></long-description>
@@ -3204,9 +3204,9 @@
           <type>\Illuminate\Support\Collection</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="ShSo\Lacassa\Query" line="64" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="Hey\Lacassa\Query" line="64" package="Default">
         <name>wrapValue</name>
-        <full_name>\ShSo\Lacassa\Query\Grammar::wrapValue()</full_name>
+        <full_name>\Hey\Lacassa\Query\Grammar::wrapValue()</full_name>
         <docblock line="64">
           <description>Wrap a single string in keyword identifiers.</description>
           <long-description></long-description>
@@ -3223,14 +3223,14 @@
           <type>string</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa\Query" line="80" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa\Query" line="80" package="Default">
         <name>compileDelete</name>
-        <full_name>\ShSo\Lacassa\Query\Grammar::compileDelete()</full_name>
+        <full_name>\Hey\Lacassa\Query\Grammar::compileDelete()</full_name>
         <docblock line="80">
           <description>Compile a delete statement into CQL.</description>
           <long-description></long-description>
-          <tag name="param" line="80" description="" type="\ShSo\Lacassa\Query" variable="$query">
-            <type>\ShSo\Lacassa\Query</type>
+          <tag name="param" line="80" description="" type="\Hey\Lacassa\Query" variable="$query">
+            <type>\Hey\Lacassa\Query</type>
           </tag>
           <tag name="return" line="80" description="" type="string">
             <type>string</type>
@@ -3239,12 +3239,12 @@
         <argument line="0" by_reference="false">
           <name>$query</name>
           <default></default>
-          <type>\ShSo\Lacassa\Query</type>
+          <type>\Hey\Lacassa\Query</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa\Query" line="100" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa\Query" line="100" package="Default">
         <name>compileUpdate</name>
-        <full_name>\ShSo\Lacassa\Query\Grammar::compileUpdate()</full_name>
+        <full_name>\Hey\Lacassa\Query\Grammar::compileUpdate()</full_name>
         <docblock line="100">
           <description>Compile an update statement into SQL.</description>
           <long-description></long-description>
@@ -3269,9 +3269,9 @@
           <type>array</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa\Query" line="131" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa\Query" line="131" package="Default">
         <name>compileUpdateCollections</name>
-        <full_name>\ShSo\Lacassa\Query\Grammar::compileUpdateCollections()</full_name>
+        <full_name>\Hey\Lacassa\Query\Grammar::compileUpdateCollections()</full_name>
         <docblock line="131">
           <description>Compiles the udpate collection methods.</description>
           <long-description></long-description>
@@ -3288,9 +3288,9 @@
           <type>\Illuminate\Database\Query\Builder</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa\Query" line="154" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa\Query" line="154" package="Default">
         <name>compileCollectionValues</name>
-        <full_name>\ShSo\Lacassa\Query\Grammar::compileCollectionValues()</full_name>
+        <full_name>\Hey\Lacassa\Query\Grammar::compileCollectionValues()</full_name>
         <docblock line="154">
           <description>Compiles the values assigned to collections.</description>
           <long-description></long-description>
@@ -3315,9 +3315,9 @@
           <type>string</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa\Query" line="177" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa\Query" line="177" package="Default">
         <name>buildCollectionString</name>
-        <full_name>\ShSo\Lacassa\Query\Grammar::buildCollectionString()</full_name>
+        <full_name>\Hey\Lacassa\Query\Grammar::buildCollectionString()</full_name>
         <docblock line="177">
           <description>Builds the insert string.</description>
           <long-description></long-description>
@@ -3342,14 +3342,14 @@
           <type>string</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa\Query" line="212" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa\Query" line="212" package="Default">
         <name>compileIndex</name>
-        <full_name>\ShSo\Lacassa\Query\Grammar::compileIndex()</full_name>
+        <full_name>\Hey\Lacassa\Query\Grammar::compileIndex()</full_name>
         <docblock line="212">
           <description></description>
           <long-description></long-description>
-          <tag name="param" line="212" description="" type="\ShSo\Lacassa\Query\Builder" variable="$query">
-            <type>\ShSo\Lacassa\Query\Builder</type>
+          <tag name="param" line="212" description="" type="\Hey\Lacassa\Query\Builder" variable="$query">
+            <type>\Hey\Lacassa\Query\Builder</type>
           </tag>
           <tag name="param" line="212" description="" type="string" variable="$columns">
             <type>string</type>
@@ -3361,7 +3361,7 @@
         <argument line="0" by_reference="false">
           <name>$query</name>
           <default></default>
-          <type>\ShSo\Lacassa\Query\Builder</type>
+          <type>\Hey\Lacassa\Query\Builder</type>
         </argument>
         <argument line="0" by_reference="false">
           <name>$columns</name>
@@ -3369,9 +3369,9 @@
           <type>string</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="ShSo\Lacassa\Query" line="220" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Hey\Lacassa\Query" line="220" package="Default">
         <name>compileAllowFiltering</name>
-        <full_name>\ShSo\Lacassa\Query\Grammar::compileAllowFiltering()</full_name>
+        <full_name>\Hey\Lacassa\Query\Grammar::compileAllowFiltering()</full_name>
         <docblock line="220">
           <description></description>
           <long-description></long-description>
@@ -3390,7 +3390,7 @@
     </class>
     <parse_markers>
       <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
-      <error line="8" code="PPC:ERR-50005">No summary for class \ShSo\Lacassa\Query\Grammar</error>
+      <error line="8" code="PPC:ERR-50005">No summary for class \Hey\Lacassa\Query\Grammar</error>
       <error line="50" code="PPC:ERR-50008">No summary for method buildInsertCollectionParam()</error>
       <error line="212" code="PPC:ERR-50008">No summary for method compileIndex()</error>
       <error line="220" code="PPC:ERR-50008">No summary for method compileAllowFiltering()</error>
@@ -3401,9 +3401,9 @@
   <package name="Default" full_name="Default"/>
   <package name="global" full_name="global"/>
   <namespace name="ShSo" full_name="ShSo">
-    <namespace name="Lacassa" full_name="ShSo\Lacassa">
-      <namespace name="Query" full_name="ShSo\Lacassa\Query"/>
-      <namespace name="Schema" full_name="ShSo\Lacassa\Schema"/>
+    <namespace name="Lacassa" full_name="Hey\Lacassa">
+      <namespace name="Query" full_name="Hey\Lacassa\Query"/>
+      <namespace name="Schema" full_name="Hey\Lacassa\Schema"/>
     </namespace>
   </namespace>
   <deprecated count="0"/>

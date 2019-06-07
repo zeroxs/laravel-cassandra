@@ -16,6 +16,8 @@ This library extends the original Laravel classes, so it uses exactly the same m
 
 * Query Builder
 
+* Eloquent
+
 * Schema
 
 * Extensions
@@ -32,7 +34,7 @@ Note: _datastax php-driver works with php version 5.6.\*, 7.0.\* and 7.1.\* only
 ### Installation using composer
 
 ```sh
-composer require shso/laravel-cassandra
+composer require hey/laravel-cassandra
 ```
 
 And add the service provider in config/app.php:
@@ -42,7 +44,7 @@ And add the service provider in config/app.php:
 ...
 providers: [
     ...,
-    ShSo\Lacassa\CassandraServiceProvider::class,
+    Hey\Lacassa\CassandraServiceProvider::class,
     ...,
 ],
 ...
@@ -104,6 +106,20 @@ If you did not change your default database connection, you will need to specify
 
 ```php
 $emp = DB::connection('cassandra')->table('emp')->get();
+```
+
+***Eloquent***
+
+Supported most of eloquent query build features, events, fields access.
+
+```php
+$users = User::all();
+    
+$user = User::where('email', 'tester@test.com')->first();
+    
+$user = User::find(new \Cassandra\Uuid("7e4c27e2-1991-11e8-accf-0ed5f89f718b"))
+
+$user = User::with('roles')->get();
 ```
 
 ## **Examples**

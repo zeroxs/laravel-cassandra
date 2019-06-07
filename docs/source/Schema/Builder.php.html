@@ -36,10 +36,10 @@
     <body>
         <pre class="brush: php">&lt;?php
 
-namespace ShSo\Lacassa\Schema;
+namespace Hey\Lacassa\Schema;
 
 use Closure;
-use ShSo\Lacassa\Connection;
+use Hey\Lacassa\Connection;
 use Illuminate\Database\Schema\Builder as BaseBuilder;
 
 class Builder extends BaseBuilder
@@ -54,7 +54,7 @@ class Builder extends BaseBuilder
     }
 
     /**
-     * @return \ShSo\Lacassa\Schema\Builder
+     * @return \Hey\Lacassa\Schema\Builder
      */
     protected function createBlueprint($table, Closure $callback = null)
     {

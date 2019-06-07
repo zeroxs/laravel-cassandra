@@ -1,14 +1,14 @@
 <?php
 
-namespace ShSo\Lacassa\Tests;
+namespace Hey\Lacassa\Tests;
 
 use DB;
-use ShSo\Lacassa\TestCase;
+use Hey\Lacassa\TestCase;
 use Faker\Factory as FakerFactory;
 use Cassandra\Rows as CassandraRows;
 use Cassandra\Uuid as CassandraUuid;
 use Cassandra\Timestamp as CassandraTimestamp;
-use ShSo\Lacassa\Query\Builder as QueryBuilder;
+use Hey\Lacassa\Query\Builder as QueryBuilder;
 use Cassandra\FutureRows as CassandraFutureRows;
 
 class QueryBuilderTest extends TestCase
