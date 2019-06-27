@@ -124,9 +124,12 @@ class Builder extends BaseBuilder
         if (is_null($this->columns)) {
             $this->columns = $columns;
         }
+        if (count($this->wheres) > 1) {
+            $this->allowFiltering();
+        }
         $cql = $this->grammar->compileSelect($this);
 
-        return collect($this->execute($cql));
+        return new Collection($this->execute($cql));
     }
 
     /**
@@ -200,23 +203,16 @@ class Builder extends BaseBuilder
     /**
      * Retrieve the "count" result of the query.
      *
-     * @param string $columns
+     * @param string $column
      *
      * @return Cassandra\Rows
      */
-    public function count($columns = '*')
+    public function count($column = '*')
     {
         $count = 0;
-        $result = $this->get(array_wrap($columns));
-        while (true) {
-            $count += $result->count();
-            if ($result->isLastPage()) {
-                break;
-            }
-            $result = $result->nextPage();
-        }
+        $result = $this->aggregate(__FUNCTION__, [$column]);
 
-        return $count;
+        return (int)$result;
     }
 
     /**
@@ -353,5 +349,20 @@ class Builder extends BaseBuilder
         $cql = $this->grammar->compileIndex($this, $columns);
 
         return $this->execute($cql);
+    }
+
+    /**
+     * Execute a query for a single record by ID.
+     *
+     * @param  int    $id
+     * @param  array  $columns
+     * @return mixed|static
+     */
+    public function find($id, $columns = ['*'])
+    {
+        if (is_string($id)) {
+            $id = new \Cassandra\Uuid($id);
+        }
+        return $this->where('id', '=', $id)->first($columns);
     }
 }

@@ -1,10 +1,10 @@
 <?php
 
-namespace lroman242\LaravelCassandra\Eloquent;
+namespace Hey\Lacassa\Eloquent;
 
 use Carbon\Carbon;
-use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope as BaseSoftDeletingScope;
 
 class SoftDeletingScope extends BaseSoftDeletingScope
@@ -18,6 +18,6 @@ class SoftDeletingScope extends BaseSoftDeletingScope
      */
     public function apply(Builder $builder, Model $model)
     {
-        $builder->where($model->getQualifiedDeletedAtColumn(), '>=', Carbon::createFromTimestamp(-1));
+        $builder->where($model->getQualifiedDeletedColumn(), '=', false);
     }
 }

@@ -1,12 +1,13 @@
 <?php
 
-namespace Illuminate\Database\Eloquent\Relations;
+namespace Hey\Lacassa\Eloquent\Relations;
 
+use Cassandra\Uuid;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\Collection;
+use Hey\Lacassa\Collection;
+use Hey\Lacassa\Eloquent\Model;
+use Hey\Lacassa\Eloquent\Builder;
 use Illuminate\Support\Collection as BaseCollection;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 
@@ -126,7 +127,7 @@ class BelongsToMany extends Relation
     {
         $this->pivotWheres[] = func_get_args();
 
-        return $this->where($this->table.'.'.$column, $operator, $value, $boolean);
+        return $this->where($column, $operator, $value, $boolean);
     }
 
     /**
@@ -142,7 +143,7 @@ class BelongsToMany extends Relation
     {
         $this->pivotWhereIns[] = func_get_args();
 
-        return $this->whereIn($this->table.'.'.$column, $values, $boolean, $not);
+        return $this->whereIn($column, $values, $boolean, $not);
     }
 
     /**
@@ -219,13 +220,15 @@ class BelongsToMany extends Relation
 
         $models = $builder->addSelect($select)->getModels();
 
-        $this->hydratePivotRelation($models);
+        // $this->hydratePivotRelation($models->all());
 
         // If we actually found models we will also eager load any relationships that
         // have been specified as needing to be eager loaded. This will solve the
         // n + 1 query problem for the developer and also increase performance.
         if (count($models) > 0) {
-            $models = $builder->eagerLoadRelations($models);
+            $models = $builder->eagerLoadRelations($models->all());
+        } else {
+            $models = [];
         }
 
         return $this->related->newCollection($models);
@@ -321,11 +324,7 @@ class BelongsToMany extends Relation
             // To get the pivots attributes we will just take any of the attributes which
             // begin with "pivot_" and add those to this arrays, as well as unsetting
             // them from the parent's models since they exist in a different table.
-            if (strpos($key, 'pivot_') === 0) {
-                $values[substr($key, 6)] = $value;
-
-                unset($model->$key);
-            }
+            $values[substr($key, 6)] = $value;
         }
 
         return $values;
@@ -403,11 +402,7 @@ class BelongsToMany extends Relation
      */
     protected function getSelectColumns(array $columns = ['*'])
     {
-        if ($columns == ['*']) {
-            $columns = [$this->related->getTable().'.*'];
-        }
-
-        return array_merge($columns, $this->getAliasedPivotColumns());
+        return $columns;
     }
 
     /**
@@ -422,11 +417,7 @@ class BelongsToMany extends Relation
         // We need to alias all of the pivot columns with the "pivot_" prefix so we
         // can easily extract them out of the models and put them into the pivot
         // relationships when they are retrieved and hydrated into the models.
-        $columns = [];
-
-        foreach (array_merge($defaults, $this->pivotColumns) as $column) {
-            $columns[] = $this->table.'.'.$column.' as pivot_'.$column;
-        }
+        $columns = array_merge($defaults, $this->pivotColumns);
 
         return array_unique($columns);
     }
@@ -459,7 +450,7 @@ class BelongsToMany extends Relation
 
         $key = $baseTable.'.'.$this->related->getKeyName();
 
-        $query->join($this->table, $key, '=', $this->getOtherKey());
+        // $query->join($this->table, $key, '=', $this->getOtherKey());
 
         return $this;
     }
@@ -473,7 +464,14 @@ class BelongsToMany extends Relation
     {
         $foreign = $this->getForeignKey();
 
-        $this->query->where($foreign, '=', $this->parent->getKey());
+        $query = $this->newPivotStatement();
+        $pivotResults = $query->where(
+            $foreign, '=', $this->parent->getKey()
+        )->get();
+
+        $this->query->whereIn(
+            $this->related->getKeyName(), (new Collection($pivotResults))->pluck($this->getOtherKey())
+        );
 
         return $this;
     }
@@ -486,7 +484,15 @@ class BelongsToMany extends Relation
      */
     public function addEagerConstraints(array $models)
     {
-        $this->query->whereIn($this->getForeignKey(), $this->getKeys($models));
+        $foreign = $this->getForeignKey();
+        $query = $this->newPivotStatement();
+        $pivotResults = $query->whereIn(
+            $foreign, $this->getKeys($models)
+        )->get();
+
+        $this->query->whereIn(
+            $this->related->getKeyName(), (new Collection($pivotResults))->pluck($this->getOtherKey())
+        );
     }
 
     /**
@@ -1032,6 +1038,10 @@ class BelongsToMany extends Relation
             $id = $id->modelKeys();
         }
 
+        if ($id instanceof Uuid) {
+            $id = [$id];
+        }
+
         $query = $this->newPivotStatement();
 
         $query->insert($this->createAttachRecords((array) $id, $attributes));
@@ -1112,6 +1122,7 @@ class BelongsToMany extends Relation
      */
     protected function createAttachRecord($id, $timed)
     {
+        $record['id'] = new \Cassandra\Uuid;
         $record[$this->foreignKey] = $this->parent->getKey();
 
         $record[$this->otherKey] = $id;
@@ -1163,6 +1174,10 @@ class BelongsToMany extends Relation
 
         if ($ids instanceof Collection) {
             $ids = $ids->modelKeys();
+        }
+
+        if ($id instanceof Uuid) {
+            $ids = [$ids];
         }
 
         $query = $this->newPivotQuery();
@@ -1367,7 +1382,7 @@ class BelongsToMany extends Relation
      */
     public function getForeignKey()
     {
-        return $this->table.'.'.$this->foreignKey;
+        return $this->foreignKey;
     }
 
     /**
@@ -1377,7 +1392,7 @@ class BelongsToMany extends Relation
      */
     public function getOtherKey()
     {
-        return $this->table.'.'.$this->otherKey;
+        return $this->otherKey;
     }
 
     /**

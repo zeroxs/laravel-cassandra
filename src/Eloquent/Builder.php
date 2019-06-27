@@ -143,4 +143,50 @@ class Builder extends EloquentBuilder
         return $relation;
     }
 
+    /**
+     * Find a model by its primary key.
+     *
+     * @param  mixed  $id
+     * @param  array  $columns
+     * @return \Illuminate\Database\Eloquent\Model|\Illuminate\Database\Eloquent\Collection|static[]|static|null
+     */
+    public function find($id, $columns = ['*'])
+    {
+        if (is_array($id)) {
+            return $this->findMany($id, $columns);
+        }
+
+        if (is_string($id)) {
+            $id = new \Cassandra\Uuid($id);
+        }
+
+        $this->query->where($this->model->getQualifiedKeyName(), '=', $id);
+
+        return $this->first($columns);
+    }
+
+    /**
+     * Find multiple models by their primary keys.
+     *
+     * @param  array  $ids
+     * @param  array  $columns
+     * @return \Illuminate\Database\Eloquent\Collection
+     */
+    public function findMany($ids, $columns = ['*'])
+    {
+        if (empty($ids)) {
+            return $this->model->newCollection();
+        }
+
+        foreach ($ids as &$id) {
+            if (is_string($id)) {
+                $id = new \Cassandra\Uuid($id);
+            }
+        }
+
+        $this->query->whereIn($this->model->getQualifiedKeyName(), $ids);
+
+        return $this->get($columns);
+    }
+
 }

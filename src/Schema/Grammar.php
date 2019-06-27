@@ -204,7 +204,16 @@ class Grammar extends BaseGrammar
      */
     public function compileIndex(Blueprint $blueprint, Fluent $command)
     {
-        return $this->compileKey($blueprint, $command, 'index');
+        return array_map(
+            function ($column) use ($command, $blueprint) {
+                return sprintf(
+                    'create index %s on %s(%s)',
+                    $this->wrap($command->index[$column]),
+                    $this->wrapTable($blueprint),
+                    $this->wrap($column)
+                );
+            }, $command->columns
+        );
     }
 
     /**
@@ -239,6 +248,19 @@ class Grammar extends BaseGrammar
     public function compileDrop(Blueprint $blueprint, Fluent $command)
     {
         return 'drop table '.$this->wrapTable($blueprint);
+    }
+
+    /**
+     * Compile a drop table command.
+     *
+     * @param \Illuminate\Database\Schema\Blueprint $blueprint
+     * @param \Illuminate\Support\Fluent $command
+     *
+     * @return string
+     */
+    public function compileDropType(Blueprint $blueprint, Fluent $command)
+    {
+        return 'drop type '.$this->wrapTable($blueprint);
     }
 
     /**

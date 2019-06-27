@@ -1,6 +1,6 @@
 <?php
 
-namespace lroman242\LaravelCassandra\Eloquent;
+namespace Hey\Lacassa\Eloquent;
 
 use Exception;
 
@@ -17,8 +17,8 @@ trait SoftDeletes
      */
     public static function bootSoftDeletes()
     {
-        throw new Exception('Not implemented');
-//        static::addGlobalScope(new SoftDeletingScope);
+        // throw new Exception('Not implemented');
+        static::addGlobalScope(new SoftDeletingScope);
     }
 
     /**
@@ -27,6 +27,14 @@ trait SoftDeletes
     public function getQualifiedDeletedAtColumn()
     {
         return $this->getDeletedAtColumn();
+    }
+    
+    /**
+     * @inheritdoc
+     */
+    public function getQualifiedDeletedColumn()
+    {
+        return $this->getDeletedColumn();
     }
 
     /**
@@ -37,6 +45,16 @@ trait SoftDeletes
     public function trashed()
     {
         return $this->{$this->getDeletedAtColumn()} != '';
+    }
+
+    /**
+     * Get the name of the "deleted at" column.
+     *
+     * @return string
+     */
+    public function getDeletedColumn()
+    {
+        return defined('static::DELETED') ? static::DELETED : 'deleted';
     }
 
 }

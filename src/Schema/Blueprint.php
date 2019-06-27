@@ -326,6 +326,27 @@ class Blueprint extends BaseBluprint
     }
 
     /**
+     * Adds the `remember_token` column to the table.
+     *
+     * @return \Illuminate\Support\Fluent
+     */
+    public function rememberToken()
+    {
+        return $this->text('remember_token');
+    }
+
+    /**
+     * Add a "deleted at" timestamp and deleted boolean for the table.
+     *
+     * @return void
+     */
+    public function softDeletes()
+    {
+        $this->boolean('deleted');
+        $this->timestamp('deleted_at');
+    }
+
+    /**
      * Determine if the blueprint has a create command.
      *
      * @return bool
@@ -339,5 +360,38 @@ class Blueprint extends BaseBluprint
         }
 
         return false;
+    }
+
+    /**
+     * Add a new index command to the blueprint.
+     *
+     * @param  string        $type
+     * @param  string|array  $columns
+     * @param  string        $index
+     * @param  string|null   $algorithm
+     * @return \Illuminate\Support\Fluent
+     */
+    protected function indexCommand($type, $columns, $index = null, $algorithm = null)
+    {
+        $columns = (array) $columns;
+
+        if (is_null($index)) {
+            $index = [];
+            foreach ((array)$columns as $column) {
+                $index[$column] = $this->createIndexName('index', [$column]);
+            }
+        } else {
+            $indexName = $index;
+            $index = [];
+            foreach ((array)$columns as $_index => $column) {
+                $index[$column] = $this->createIndexName(
+                    'index', [$indexName . $_index]
+                );
+            }
+        }
+
+        
+
+        return $this->addCommand($type, compact('index', 'columns', 'algorithm'));
     }
 }

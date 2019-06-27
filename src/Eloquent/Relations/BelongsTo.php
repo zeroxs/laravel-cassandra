@@ -1,11 +1,14 @@
 <?php
 
-namespace Illuminate\Database\Eloquent\Relations;
+namespace Hey\Lacassa\Eloquent\Relations;
 
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Builder;
+use Cassandra\Uuid;
+use Illuminate\Support\Arr;
+use Illuminate\Support\Str;
+use Hey\Lacassa\Collection;
+use Hey\Lacassa\Eloquent\Model;
+use Hey\Lacassa\Eloquent\Builder;
 use Illuminate\Database\Query\Expression;
-use Illuminate\Database\Eloquent\Collection;
 
 class BelongsTo extends Relation
 {
@@ -77,9 +80,9 @@ class BelongsTo extends Relation
             // For belongs to relationships, which are essentially the inverse of has one
             // or has many relationships, we need to actually query on the primary key
             // of the related models matching on the foreign key that's on a parent.
-            $table = $this->related->getTable();
+            // $table = $this->related->getTable();
 
-            $this->query->where($table.'.'.$this->otherKey, '=', $this->parent->{$this->foreignKey});
+            $this->query->where($this->otherKey, '=', $this->parent->{$this->foreignKey} ?: new \Cassandra\Uuid);
         }
     }
 
@@ -99,7 +102,7 @@ class BelongsTo extends Relation
 
         $query->select($columns);
 
-        $otherKey = $this->wrap($query->getModel()->getTable().'.'.$this->otherKey);
+        $otherKey = $this->wrap($this->otherKey);
 
         return $query->where($this->getQualifiedForeignKey(), '=', new Expression($otherKey));
     }
@@ -323,6 +326,6 @@ class BelongsTo extends Relation
      */
     public function getQualifiedOtherKeyName()
     {
-        return $this->related->getTable().'.'.$this->otherKey;
+        return $this->otherKey;
     }
 }

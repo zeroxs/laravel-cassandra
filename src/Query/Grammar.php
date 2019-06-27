@@ -36,11 +36,19 @@ class Grammar extends BaseGrammar
         // We need to build a list of parameter place-holders of values that are bound
         // to the query. Each insert should have the exact same amount of parameter
         // bindings so we will loop through the record and parameterize them all.
-        $parameters = collect($values)->map(function ($record) {
-            return $this->parameterize($record);
-        })->implode(', ');
-
-        return "insert into {$table} ({$columns}) values ({$parameters})";
+        $values = collect($values);
+    
+        $statments = $values->map(
+            function ($record) use ($table, $columns) {
+                return "insert into {$table} ({$columns}) values ({$this->parameterize($record)})";
+            }
+        )->implode('; ');
+        
+        if ($values->count() > 1) {
+            return "BEGIN BATCH $statments; APPLY BATCH;";
+        } else {
+            return $statments;
+        }
     }
 
     /**
@@ -221,5 +229,19 @@ class Grammar extends BaseGrammar
     public function compileAllowFiltering($query, $allow_filtering)
     {
         return $allow_filtering ? 'allow filtering' : '';
+    }
+
+    /**
+     * Compile a "where in" clause.
+     *
+     * @param  \Illuminate\Database\Query\Builder  $query
+     * @param  array  $where
+     * @return string
+     */
+    protected function whereIn(BaseBuilder $query, $where)
+    {
+        $values = $this->parameterize($where['values']);
+
+        return $this->wrap($where['column']).' in ('.$values.')';
     }
 }
